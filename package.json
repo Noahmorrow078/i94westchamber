@@ -32,7 +32,8 @@
     "react-tabs": "^3.2.2",
     "react-typed": "^1.2.0",
     "sass": "^1.49.10",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "fslightbox-react": "^1.6.2"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
