@@ -2,8 +2,8 @@
   "name": "doob",
   "version": "0.1.0",
   "engines": {
-    "node": "16.x",
-    "npm":"8.8.0"
+    "node": "14.x",
+    "npm": "7.x"
   },
   "private": true,
   "homepage": "https://doob.rainbowit.net/",
