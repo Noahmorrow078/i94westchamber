@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import { FiPlay, FiZoomIn , FiFolderPlus} from "react-icons/fi";
 
 
@@ -31,9 +30,9 @@ function VideoItem({galleryItem}) {
                 <h3 className="title">Watch the creative process behind <br /> the digital marketing.</h3>
             </div>
             <div className="video-lightbox-wrapper">
-                <FsLightbox 
+                {/* <FsLightbox 
                 toggler={ toggler } 
-                sources={popupLink} />
+                sources={popupLink} /> */}
             </div>
         </div>
     )

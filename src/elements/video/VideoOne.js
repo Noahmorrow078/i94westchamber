@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+// import FsLightbox from "fslightbox-react";
 import { FiPlay } from "react-icons/fi";
 
 const PopupContent =  {
@@ -21,7 +21,7 @@ function VideoOne() {
                     <div className="video-icon">
                         <button className="btn-default rounded-player" onClick={ () => setToggler(!toggler) }><span><FiPlay /></span></button>
                     </div>
-                    <FsLightbox toggler={ toggler } sources={PopupContent.popupLink} />
+                    {/* <FsLightbox toggler={ toggler } sources={PopupContent.popupLink} /> */}
                 </div>
             </div>  
 
@@ -33,7 +33,7 @@ function VideoOne() {
                     <div className="video-icon">
                         <button className="btn-default rounded-player" onClick={ () => setToggler(!toggler) }><span><FiPlay /></span></button>
                     </div>
-                    <FsLightbox toggler={ toggler } sources={PopupContent.popupLink} />
+                    {/* <FsLightbox toggler={ toggler } sources={PopupContent.popupLink} /> */}
                 </div>
             </div> 
         </div>
