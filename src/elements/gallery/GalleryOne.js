@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+// import FsLightbox from "fslightbox-react";
 import { FiPlay, FiZoomIn , FiFolderPlus} from "react-icons/fi";
 
 function GalleryOne({galleryItem}) {
@@ -30,9 +30,9 @@ function GalleryOne({galleryItem}) {
             <div className="video-icon">
                 <button className="btn-default rounded-player sm-size" onClick={ () => setToggler(!toggler) }><span>{iconHandel()}</span></button>
             </div>
-            <FsLightbox 
+            {/* <FsLightbox 
             toggler={ toggler } 
-            sources={popupLink} />
+            sources={popupLink} /> */}
         </div>
     )
 }
