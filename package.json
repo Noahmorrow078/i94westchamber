@@ -1,6 +1,10 @@
 {
   "name": "doob",
   "version": "0.1.0",
+  "engines": {
+    "node": "18.x",
+    "npm":"8.8.0"
+  },
   "private": true,
   "homepage": "https://doob.rainbowit.net/",
   "dependencies": {
@@ -29,10 +33,6 @@
     "react-typed": "^1.2.0",
     "sass": "^1.49.10",
     "web-vitals": "^1.1.2"
-  },
-  "engine": {
-    "node": "16.x",
-    "npm": "8.15.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
