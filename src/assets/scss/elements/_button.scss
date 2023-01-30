@@ -22,9 +22,9 @@ button {
         background-color: transparent;
         background: linear-gradient(95deg, var(--color-primary) 15%, var(--color-tertiary) 45%, var(--color-pink) 75%, var(--color-secondary) 100%) 95% / 200% 100%;
         transition-duration: 300ms;
-        color: var(--color-white);
+        color: var(--color-primary);
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 800;
         text-align: center;
         text-decoration: none;
         text-shadow: var(--shadow-light);
@@ -51,7 +51,7 @@ button {
             box-shadow: var(--shadow-primary);
             -webkit-filter: brightness(125%);
             filter: brightness(125%);
-            color: var(--color-white);
+            color: var(--color-black);
             text-decoration: none;
         }
         &.btn-small {

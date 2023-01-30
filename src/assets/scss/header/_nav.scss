@@ -17,7 +17,7 @@
                 line-height: 80px;
                 transition: 0.3s;
                 &:hover {
-                    color: var(--color-primary);
+                    color: var(--color-secondary);
                 }
             }
         }
@@ -53,7 +53,7 @@
                             border-radius: 3px;
                             @extend %transition;
                             &:hover {
-                                color: var(--color-primary);
+                                color: var(--color-secondary);
                                 background: var(--color-darker);
                             }
                         }

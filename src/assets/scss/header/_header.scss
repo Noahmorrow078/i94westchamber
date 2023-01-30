@@ -5,6 +5,33 @@
     display: none;
 }
 
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left:0px;
+}
+
+.cities li {
+    width:100%; text-align:center; color:black;
+    border-right:2px solid black;
+    font-family: "century-gothic", sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0.22em;
+text-align: center;
+
+    &:last-of-type {
+        border-right:0px;
+    }
+}
+
+
+.cities-wrap {
+    background:#D6D6D6;
+}
 .header-default {
     max-width: 100%;
     border-bottom: 1px solid var(--color-border);
@@ -17,11 +44,11 @@
     .logo {
         a {
             display: flex;
-            height: 80px;
+            height: 70px;
             line-height: 80px;
             align-items: center;
             img {
-                max-height: 45px;
+                max-height: 80px;
             }
         }
     }
@@ -96,7 +123,7 @@
     }
 
     .header-top-bar {
-        background-color: transparent;
+        background-color: var(--color-primary);
 
         @media #{$md-layout} {
             background-color: var(--color-darker);
@@ -108,7 +135,7 @@
     }
 
     .header-default {
-        background-color: transparent;
+        background-color: var(--color-primary);
         background-image: none;
 
         @media #{$md-layout} {

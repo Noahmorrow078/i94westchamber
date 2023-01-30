@@ -6,7 +6,7 @@ import PageScrollTop from './components/pageToTop/PageScrollTop'
 import Splash from "./pages/Splash";
 import HomeDefault from "./pages/HomeDefault";
 import BusinessConsulting2 from "./pages/BusinessConsulting2";
-import Corporate from "./pages/Corporate";
+import Home from "./pages/Home";
 import Business from "./pages/Business";
 import DigitalAgency from "./pages/DigitalAgency";
 import Finance from "./pages/Finance";
@@ -77,10 +77,9 @@ const App = () => {
         <Router>
             <PageScrollTop>
                 <Switch>
-                    <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Splash}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Home}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business-consulting"}`} exact component={HomeDefault}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business-consulting-2"}`} exact component={BusinessConsulting2}/>
-                    <Route path={`${process.env.PUBLIC_URL + "/corporate"}`} exact component={Corporate}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business"}`} exact component={Business}/>
                     <Route path={`${process.env.PUBLIC_URL + "/digital-agency"}`} exact component={DigitalAgency}/>
                     <Route path={`${process.env.PUBLIC_URL + "/finance"}`} exact component={Finance}/>

@@ -15,7 +15,9 @@
         }
     }
     .title {
-        
+        &.dark {
+            color:black !Important;
+        }
     }
     .description {
         br {
@@ -41,6 +43,8 @@
         padding-bottom: 19px;
         opacity: 0.6;
     }
+
+   
 }
 
 

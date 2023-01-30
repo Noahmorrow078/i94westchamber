@@ -9,14 +9,14 @@ const HeaderTopBar = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
-                            <p><a href="#link">Get the most advanced template <FiChevronRight /></a></p>
+                            <p><a href="#link">Become a Member now! <FiChevronRight /></a></p>
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-12">
                         <div className="header-right">
                             <div className="address-content">
-                                <p><FiMapPin /><span>Alabama, USA</span></p>
-                                <p><FiPhone /><span><a href="#">+06 58 49 99 56</a></span></p>
+                                <p><FiMapPin /><span>Minnesota, USA</span></p>
+                                <p><FiPhone /><span><a href="tel:7634282921">763-428-2921</a></span></p>
                             </div>
                             <div className="social-icon-wrapper">
                                 <ul className="social-icon social-default icon-naked">

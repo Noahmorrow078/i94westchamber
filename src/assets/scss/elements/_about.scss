@@ -1,8 +1,68 @@
 /*--------------------------
     About Styles  
 ---------------------------*/
+.list-numbers {
+    margin-left:50px;
+    li {position:relative; list-style-type: none;
+        h4 {color:var(--color-secondary);
+            font-variant:all-petite-caps;
+        font-size:40px;}
+    }
+    .number {
+        position:absolute;
+        font-size: 30px;
+        left: -50px;
+        top:5px;
+        opacity: .7;
+        font-family: var(--secondary-font);
+        font-weight: 500;}
+}
+.about-style-2 {
+    background-color:var(--color-gray);
+}
+.todo-wrapper {
+    display:flex; flex-wrap:wrap;
+    justify-content: space-evenly;
+
+    .todo {
+        width: 100%;
+
+  min-height: 300px;
+  background-size: cover;
+  display: block;
+  max-width: 450px;
+  margin: 10px;
+  position:relative;
+  border: 3px solid var(--color-secondary);
+
+  .gradient {
+    z-index:1;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.42619054457720584) 42%); 
+ }
+
+  span {
+    z-index:2;
+    position:absolute;
+    font-size:120px;
+    line-height:1;
+    bottom:0px;
+    left:0;
+    right:0;
+    margin:auto;
+    text-align:center;
+    font-family: var(--primary-font);
+    font-weight:800;
+    color:var(--color-primary)
+  }
+
+    }
+}
 .about-style-4 {
-   
+
     .title {
         font-weight: 400;
         margin-bottom: 35px;

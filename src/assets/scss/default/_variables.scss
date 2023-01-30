@@ -1,15 +1,16 @@
 /*-- Variables --*/
 :root {
     //Themes colors
-    --color-primary: #059DFF;
+    --color-gray: #D9D9D9;
+    --color-primary: #0C3A61;
     --color-primary-rgba: rgb(5, 157, 255);
     --color-primary-alt: #059DFF;
     --color-primary-light: #059DFF;
     --color-primary-lightest: #059DFF;
-    --color-secondary: #FB5343;
-    --color-tertiary: #6549D5;
+    --color-secondary: #FDB914;
+    --color-tertiary: white;
     --color-tertiary-alt: #6549D5;
-    --color-pink: #E33FA1;
+    --color-pink: #FDB914;
     --color-light-green: #36C6F0;
     --color-primary-darker: #011827;
     --color-tertiary-darker: #150b40;
@@ -19,9 +20,9 @@
     
     // Typo Color 
     --color-heading: #ffffff;
-    --color-body: #acacac;
+    --color-body: #ffffff;
 
-    --color-dark: #060606;
+    --color-dark: #0C3A61;
     --color-darker: rgba(6, 6, 6, 0.7);
     --color-darkest: rgba(0, 0, 0, 0.3);
 
@@ -37,7 +38,7 @@
 
 
     // Gery Colors 
-    --color-gray: #65676B;
+
     // --color-midgray: #9F9F9F;
     --color-midgray: #878787;
     --color-light: #E4E6EA;
@@ -104,8 +105,8 @@
     --transition-transform: transform .65s cubic-bezier(.23,1,.32,1);
 
     //Font Family
-    --font-primary: 'Inter', sans-serif;
-    --secondary-font: 'Inter', sans-serif;
+    --font-primary:  "century-gothic", sans-serif;
+    --secondary-font:  "century-gothic", sans-serif;
     --font-awesome: 'Font Awesome 5 Pro';
 
 

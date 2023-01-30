@@ -6,7 +6,7 @@ import FooterOne from "../../common/footer/FooterOne";
 import BreadcrumbOne from "../breadcrumb/BreadcrumbOne";
 import SectionTitle from "../sectionTitle/SectionTitle";
 import ServiceOne from "./ServiceOne";
-import ServiceTwo from "./ServiceTwo";
+
 import ServiceThree from "./ServiceThree";
 import ServiceFour from "./ServiceFour";
 import ServiceFive from "./ServiceFive";
@@ -40,10 +40,7 @@ const Service = () => {
                                      />
                                 </div>
                             </div>
-                            <ServiceOne 
-                                serviceStyle = "service__style--1 bg-color-blackest radius mt--25"
-                                textAlign = "text-center"
-                            />
+                      
                         </div>
                     </div>
                     {/* End Service Area  */}
@@ -89,10 +86,7 @@ const Service = () => {
                                      />
                                 </div>
                             </div>
-                            <ServiceTwo 
-                                cardStyle = "card-style-1"
-                                textAlign = "text-start"
-                             />
+                         
                         </div>
                     </div>
                     {/* End Service Area  */}

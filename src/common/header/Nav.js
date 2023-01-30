@@ -4,6 +4,25 @@ import {Link} from "react-router-dom";
 const Nav = () => {
     return (
         <ul className="mainmenu">
+
+<li className="has-droupdown"><Link to="/contact">Join Now</Link></li>
+<li className="has-droupdown"><Link to="/contact">About</Link></li>
+<li className="has-droupdown"><Link to="/contact">Resources</Link>
+    <ul className="submenu">
+        <li><Link to="#link">Hot Deals</Link></li>
+        <li><Link to="#link">Employment</Link></li>
+        <li><Link to="#link">Join A Committee</Link></li>
+        <li><Link to="#link">Scholarship Program</Link></li>
+    </ul>
+</li>
+<li className="has-droupdown"><Link to="#link">Members Only</Link>
+    <ul className="submenu">
+        <li><a href="https://business.i94westchamber.org/list" >Directory</a></li>
+        <li><a href="https://business.i94westchamber.org/login">Login</a></li>
+    </ul>
+</li>
+
+{/* 
             <li className="has-droupdown"><Link to="#">Home</Link>
                 <ul className="submenu">
                     <li><Link to="/business-consulting">Business Consulting</Link></li>
@@ -100,7 +119,8 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="/contact">Contact</Link></li>
+            <li className="has-droupdown"><Link to="/contact">Contact</Link></li> */}
+
         </ul>
     )
 }

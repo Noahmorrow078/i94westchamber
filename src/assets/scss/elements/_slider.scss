@@ -1,0 +1,97 @@
+.slider-wrapper {
+    width:100%;
+    background-color: white;
+}
+.slider{
+    padding: 50px 0;
+}
+.slider-origin{
+  
+
+    border-radius: 50%;
+    display: block;
+    margin:auto !IMportant;
+    height:100%; width:115px !important;
+}
+.slider-inner{
+    display: block;
+    width:100% !Important;
+    height:550px !important; margin:auto;
+}
+.num {position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    FONT-SIZE: 103PX;
+    OPACITY: .3;}
+.slider-item h2 {FONT-weight:bolder !IMportant; color:white !Important; text-align:center; font-size:18px !Important; top: 20px; position:relative;}
+.slider-item p {    text-align: center;
+    top: 45px;
+    position: relative;
+}
+.slider-item{
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+            box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    position: absolute;
+		cursor: pointer;
+    left:41%;
+    transform-origin: center 175%;
+    -webkit-transform-origin: center 175%;
+    -ms-transform-origin: center 175%;
+    -moz-transform-origin: center 175%;
+    
+    -webkit-transition: -webkit-transform 0.5s;
+    
+    transition: -webkit-transform 0.5s;
+    
+    -o-transition: transform 0.5s;
+    
+    transition: transform 0.5s;
+    
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+
+    text-align: left;
+    color: #fff;
+    padding: 7px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -moz-user-select: -moz-none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+.slider-item.active h2 {-webkit-filter: drop-shadow(2px 4px 6px black);filter: drop-shadow(2px 4px 6px black);}
+.slider-item.active span {-webkit-filter: drop-shadow(2px 4px 6px black);filter: drop-shadow(2px 4px 6px black);}
+
+.slider-item.active{
+    background-color: purple;
+		cursor: default;
+}
+.slider-item:not(.active):hover{
+	-webkit-filter: brightness(.8);
+	        filter: brightness(.8);
+}
+
+.slider-item:not(.active){
+	-webkit-filter: brightness(.6);
+	        filter: brightness(.6);
+}
