@@ -1,7 +1,6 @@
 import React from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import {Link} from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const teamData = [
     {
@@ -32,10 +31,7 @@ const TeamThree = ({column , teamStyle}) => {
         <div className="row row--30">
             {teamData.map((data, index) => (
                 <div className={`${column}`} key={index}>
-                    <ScrollAnimation 
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}>
+                   
                         <div className={`rn-team ${teamStyle}`}>
                             <div className="inner">
                                 <figure className="thumbnail">
@@ -47,7 +43,7 @@ const TeamThree = ({column , teamStyle}) => {
                                 </figcaption>
                             </div>
                         </div>
-                    </ScrollAnimation>
+             
                 </div>
             ))}
         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
 
 const callToActionData = {
     title: "Ready to start creating a standard website?",
@@ -15,28 +14,14 @@ const CalltoActionOne = () => {
                     <div className="col-lg-12">
                         <div className="inner">
                             <div className="content text-center">
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
+                           
                                     <h2 className="title">{callToActionData.title}</h2>
-                                </ScrollAnimation>
 
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
                                     <h6 className="subtitle">{callToActionData.subtitle}</h6>
-                                </ScrollAnimation>
 
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
                                     <div className="call-to-btn">
                                         <a className="btn-default" href="#">{callToActionData.btnText}</a>
                                     </div>
-                                </ScrollAnimation>
                             </div>
                         </div>
                     </div>

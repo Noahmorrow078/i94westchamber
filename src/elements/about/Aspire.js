@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 
@@ -21,12 +20,8 @@ const Aspire = () => {
 
                     <div className="aspire-text">
 
-                            <ScrollAnimation 
-                            animateIn="fadeInUp"
-                            animateOut="fadeInOut"
-                            animateOnce={true}>
                                   <img className="mag" src="./images/about/aspire_logo.png" alt="Aspire Logo" />
-                            </ScrollAnimation>
+                      
                   
 
                     <p style={{color:'black'}}>

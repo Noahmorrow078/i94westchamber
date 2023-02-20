@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 

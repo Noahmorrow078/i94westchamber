@@ -1,5 +1,4 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
 import { FiArrowRight } from "react-icons/fi";
 import Logo from "../logo/Logo";
 
@@ -21,24 +20,18 @@ const CalltoActionSeven = () => {
                                     image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
                                     image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
                                 />
-                                <ScrollAnimation 
-                                animateIn="fadeInUp"
-                                animateOut="fadeInOut"
-                                animateOnce={true}>
+                              
                                     <p className="subtitle">{callToActionData.subtitle}</p>
-                                </ScrollAnimation>
+                           
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-4">
-                        <ScrollAnimation 
-                        animateIn="fadeInUp"
-                        animateOut="fadeInOut"
-                        animateOnce={true}>
+                      
                             <div className="call-to-btn text-start mt_sm--20 text-md-end">
                                 <a className="btn-default btn-icon" target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
                             </div>
-                        </ScrollAnimation>
+                       
                     </div>
                 </div>
             </div>

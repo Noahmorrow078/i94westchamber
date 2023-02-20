@@ -1,7 +1,6 @@
 import React from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import {Link} from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const teamData = [
     {
@@ -79,10 +78,7 @@ const TeamOne = ({column , teamStyle}) => {
             {teamData.map((data, index) => (
                 <div className={`${column}`} key={index}>
                     <div className={`rn-team ${teamStyle}`}>
-                        <ScrollAnimation 
-                        animateIn="fadeInUp"
-                        animateOut="fadeInOut"
-                        animateOnce={true}>
+                      
                             <div className="inner">
                                 <figure className="thumbnail">
                                     <img src={`./images/team/${data.image}.jpg`} alt="Corporate React Template" />
@@ -103,7 +99,7 @@ const TeamOne = ({column , teamStyle}) => {
                                     </ul>
                                 </figcaption>
                             </div>
-                        </ScrollAnimation>
+                       
                     </div>
                 </div>
             ))}

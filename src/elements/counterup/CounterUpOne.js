@@ -1,7 +1,6 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import TrackVisibility from "react-on-screen";
-import ScrollAnimation from "react-animate-on-scroll";
 
 
 const Data = [

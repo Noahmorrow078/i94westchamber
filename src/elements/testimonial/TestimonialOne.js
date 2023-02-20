@@ -1,5 +1,4 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
 
 const testimonialData = [
     {
@@ -33,10 +32,7 @@ const TestimonialOne = ({column , teamStyle}) => {
         <div className="row row--15">
             {testimonialData.map((data, index) => (
                 <div className={`${column}`} key={index}>
-                    <ScrollAnimation 
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}>
+                
                         <div className={`rn-box-card ${teamStyle}`}>
                             <div className="inner">
                                 <figure className="thumbnail">
@@ -49,7 +45,7 @@ const TestimonialOne = ({column , teamStyle}) => {
                                 </figcaption>
                             </div>
                         </div>
-                    </ScrollAnimation>
+         
                 </div>
             ))}
         </div>
