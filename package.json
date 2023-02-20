@@ -1,12 +1,12 @@
 {
-  "name": "doob",
+  "name": "I94 West Chamber",
   "version": "0.1.0",
   "engines": {
     "node": "18.1.0",
     "npm": "8.9.0"
   },
   "private": true,
-  "homepage": "https://doob.rainbowit.net/",
+  "homepage": "https://i94westchamber.org",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
