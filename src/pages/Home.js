@@ -73,9 +73,7 @@ const Home = () => {
                                         color="dark"
                                     />
                      
-                        <EventList 
-                    
-                            />
+                        <EventList/>
                     </div>
                 </div>
                 </div>

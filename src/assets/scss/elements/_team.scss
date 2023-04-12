@@ -4,8 +4,10 @@
 .rn-box-card,
 .team-style-default {
     margin-top: 75px;
+    margin-right:10px;
+    margin-left:10px;
     .inner {
-        background: linear-gradient(180deg,var(--color-lessdark) 20%,rgba(19,19,19,.4));
+        background: var(--blue);
         -webkit-backdrop-filter: blur(4px) opacity(.95);
         backdrop-filter: blur(4px) opacity(.95);
         border-radius: var(--radius-big);

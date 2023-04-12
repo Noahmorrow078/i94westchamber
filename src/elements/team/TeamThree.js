@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import {Link} from "react-router-dom";
+import Slider from 'react-slick';
 
 const teamData = [
     {
@@ -23,19 +24,52 @@ const teamData = [
         name: 'Afanan Sifa',
         designation: 'Accounts Manager',
     },
+    {
+        image: 'team-07',
+        name: 'Afanan Sifa',
+        designation: 'Accounts Manager',
+    },
+    {
+        image: 'team-07',
+        name: 'Afanan Sifa',
+        designation: 'Accounts Manager',
+    },
+    {
+        image: 'team-07',
+        name: 'Afanan Sifa',
+        designation: 'Accounts Manager',
+    },
 ]
 
 
+
+
+
 const TeamThree = ({column , teamStyle}) => {
+                        
+    const settings = {
+        dots: false,
+        centerMode: true,
+        infite:true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000
+    };
+    
     return (
-        <div className="row row--30">
+        <div className="row row--30" style={{display:'flex', gap:'20px'}}>
+          <Slider {...settings}>
+
             {teamData.map((data, index) => (
-                <div className={`${column}`} key={index}>
+                <div key={index}>
                    
                         <div className={`rn-team ${teamStyle}`}>
                             <div className="inner">
                                 <figure className="thumbnail">
-                                    <img src={`./images/team/${data.image}.jpg`} alt="Corporate React Template" />
+                                    <img style={{borderRadius:'100%'}}src={`./images/team/team-01.jpg`} alt="Corporate React Template" />
                                 </figure>
                                 <figcaption className="content">
                                     <h2 className="title">{data.name}</h2>
@@ -43,9 +77,10 @@ const TeamThree = ({column , teamStyle}) => {
                                 </figcaption>
                             </div>
                         </div>
-             
-                </div>
+            
+            </div>
             ))}
+            </Slider>
         </div>
     )
 }

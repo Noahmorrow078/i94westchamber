@@ -2,11 +2,17 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import PageScrollTop from './components/pageToTop/PageScrollTop'
 
+
+// Important Pages import Here 
+
+import Home from "./pages/Home";
+import JoinNow from "./pages/JoinNow";
+
+
 // Pages import Here 
 import Splash from "./pages/Splash";
 import HomeDefault from "./pages/HomeDefault";
 import BusinessConsulting2 from "./pages/BusinessConsulting2";
-import Home from "./pages/Home";
 import Business from "./pages/Business";
 import DigitalAgency from "./pages/DigitalAgency";
 import Finance from "./pages/Finance";
@@ -77,6 +83,8 @@ const App = () => {
         <Router>
             <PageScrollTop>
                 <Switch>
+                <Route path={`${process.env.PUBLIC_URL + "/join-now"}`} exact component={JoinNow}/>
+
                     <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Home}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business-consulting"}`} exact component={HomeDefault}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business-consulting-2"}`} exact component={BusinessConsulting2}/>

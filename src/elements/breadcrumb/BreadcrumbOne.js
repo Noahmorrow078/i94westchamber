@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const BreadcrumbOne = ({ title , rootUrl , parentUrl, currentUrl}) => {
+const BreadcrumbOne = ({ title , rootUrl , parentUrl, currentUrl, BackgroundImage}) => {
     return (
-        <div className="breadcrumb-area breadcarumb-style-1 ptb--120">
+        <div className="breadcrumb-area breadcarumb-style-1 ptb--120"  style={{backgroundImage: `url(${BackgroundImage}`}}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">

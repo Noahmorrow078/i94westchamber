@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <ul className="mainmenu">
 
-<li className="has-droupdown"><Link to="/contact">Join Now</Link></li>
+<li className="has-droupdown"><Link to="/join-now">Join Now</Link></li>
 <li className="has-droupdown"><Link to="/contact">About</Link></li>
 <li className="has-droupdown"><Link to="/contact">Resources</Link>
     <ul className="submenu">
@@ -119,7 +119,7 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown"><Link to="/contact">Contact</Link></li> */}
+            <li className="has-droupdown"><Link to="/contact">Contact</Link></li>  */}
 
         </ul>
     )
