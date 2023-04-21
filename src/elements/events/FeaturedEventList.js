@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import moment from "moment";
-import Slider from 'react-slick';
+
+import { Navigation } from 'swiper';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import 'swiper/css';
+import "swiper/css/navigation";
 
 const FeaturedEventList = () => {
+  
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     setLoading(true);
@@ -25,17 +33,10 @@ const FeaturedEventList = () => {
                 });
             }, []);
 
-                    
-        const settings = {
-            dots: true,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: true,
-            autoplaySpeed: 3000
-        };
+            const handleSlideChange = (swiper) => {
+              setCurrentSlide(swiper.activeIndex);
+            }
+          
         
             
             return (
@@ -43,12 +44,26 @@ const FeaturedEventList = () => {
             {loading ? (
                 <div>Loading...</div>
                 ) : (
-                    <Slider {...settings}>
-                {data.map(item => (
+                <Swiper 
+                spaceBetween={20}
+                modules={[Navigation]}            
+                slidesPerView={currentSlide > 0 ? 1 : 1.20} 
+                navigation
+                 breakpoints={{  
+                  768: {
+                    slidesPerView: 3,
+                    navigation:true
+                    }
+                  }}
+                  onSlideChange={handleSlideChange}
+                  >
+
+                    {data.map((item, index) => (
+                                        <SwiperSlide key={index} >
+
                     <div key={item.id} class="featured-event-item" >
                         <a href={item.Url}></a>
                     <div style={{backgroundImage: item.Image != null ? `url(${item.Image})` :  `url(${process.env.PUBLIC_URL}/images/bg/bg.jpg)`}}>
-
                         <div className="event-time" >
                             <span className="event-month">{moment(item.AltData).format("MMMM")}</span>
                             <span className="event-day">{moment(item.AltData).format(" Do")}</span>
@@ -56,8 +71,10 @@ const FeaturedEventList = () => {
                     </div>
 
                     </div>
+                    </SwiperSlide>
+
                 ))}
-            </Slider>
+            </Swiper>
             )}
 
             <div id="mni-widgets-1674517252651"></div>

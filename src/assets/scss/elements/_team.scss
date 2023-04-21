@@ -8,8 +8,7 @@
     margin-left:10px;
     .inner {
         background: var(--blue);
-        -webkit-backdrop-filter: blur(4px) opacity(.95);
-        backdrop-filter: blur(4px) opacity(.95);
+        position: relative;
         border-radius: var(--radius-big);
 
         .thumbnail {
@@ -34,6 +33,7 @@
             padding: 20px;
             padding-top: 85px;
             padding-bottom: 35px;
+            position:relative;
 
             .title {
                 font-size: 34px;

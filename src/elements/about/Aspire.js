@@ -20,15 +20,15 @@ const Aspire = () => {
 
                     <div className="aspire-text">
 
-                                  <img className="mag" src="./images/about/aspire_logo.png" alt="Aspire Logo" />
+                                  <img className="mag   d-none d-md-block mb--40" src="./images/about/aspire_logo.png" alt="Aspire Logo" style={{maxWidth:'450px',margin:'auto'}} />
                       
                   
 
-                    <p style={{color:'black'}}>
+                    <p style={{color:'black',padding:'10px'}}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum em. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
                     </p>
     
-                    <Link className="btn-default btn-icon" to="#">View Now!<i className="icon"><FiArrowRight /></i></Link>
+                    <Link className="btn-default btn-icon m--auto" to="#">View Now!<i className="icon"><FiArrowRight /></i></Link>
                 
                     </div>
 

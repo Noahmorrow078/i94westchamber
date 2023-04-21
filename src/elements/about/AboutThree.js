@@ -28,7 +28,7 @@ const AboutThree = () => {
 
                                     <ul className="list-numbers">
                                         {aboutItems.map((item, index) => (
-                                             <li><span className="number">0{index + 1}</span>
+                                             <li key={`${item.index}_${item.title}`}><span className="number">0{index + 1}</span>
                                               <h4>{item.title}</h4>
                                               <p>{item.text}</p>
                                              </li>
@@ -36,14 +36,14 @@ const AboutThree = () => {
                                        
                                     </ul>
                                
-                                    <div className="read-more-btn mt--40">
-                                        <Link className="btn-default btn-icon" to="#">More About Us <i className="icon"><FiArrowRight /></i></Link>
+                                    <div className="read-more-btn mt--40 ">
+                                        <Link className="btn-default btn-icon m--auto" to="#">More About Us <i className="icon"><FiArrowRight /></i></Link>
                                     </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 d-none d-md-block">
                         <div className="thumbnail">
                             <img className="w-100" src="./images/about/about-1.png" alt="About Images" />
                         </div>

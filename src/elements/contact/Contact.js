@@ -10,12 +10,7 @@ const Contact = () => {
         <>
             <SEO title="Contact || Doob - React Business  Template" />
             <Layout>
-                <BreadcrumbOne 
-                    title="The Easiest Way To Create Website <br /> Quick Copy & Make site."
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Contact"
-                />
+              
                 <div className="main-content">
                     {/* Start Contact Area  */}
                     <div className="rwt-contact-area rn-section-gap">
@@ -25,8 +20,8 @@ const Contact = () => {
                                     <SectionTitle
                                         textAlign = "text-center"
                                         radiusRounded = ""
-                                        subtitle = "Contact Form"
-                                        title = "Our Contact Address Here."
+                                        subtitle = "I94 WEST CHAMBER"
+                                        title = "Get in touch with us"
                                         description = ""
                                     />
                                 </div>

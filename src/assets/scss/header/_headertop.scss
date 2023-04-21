@@ -80,7 +80,7 @@
 .header-top-bar {
     padding: 10px 0;
     border-bottom: 1px solid var(--color-border);
-    background-color: var(--color-darker);
+    background-color: var(--blue);
     .header-left {
         @media #{$md-layout} {
             text-align: center;
@@ -145,7 +145,7 @@
             }
         }
     }
-
+  
     .social-default {
         &.icon-naked {
             li {
@@ -184,3 +184,8 @@
 }
 
 
+@media (max-width:768px) {
+    .header-top-bar {
+        display:none;
+    }
+    }

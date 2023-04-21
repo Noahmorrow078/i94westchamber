@@ -95,3 +95,32 @@
 	-webkit-filter: brightness(.6);
 	        filter: brightness(.6);
 }
+@media (max-width: 768px) {
+    .slider-item{
+
+        height:90px !important;
+        width:90px !important;
+    }
+    
+    body .slider-inner {height: 370px !important; right:-7px; position:relative;}
+    .slider-item {left:35% !important; }
+    
+    body .slider-item h2 {
+        FONT-weight: bolder !IMportant;
+        color: #fff !Important;
+        text-align: center;
+        font-size: 12px !Important;
+        top: 8px;
+        position: relative;
+        line-height: 1 !important;
+    }
+    
+    body .slider-item p {
+        text-align: center !important;
+        top: 25px !important;
+        position: relative;
+        font-size: 10px;
+        line-height: 1 !important;
+    }
+
+}

@@ -32,16 +32,25 @@ text-align: center;
 .cities-wrap {
     background:#D6D6D6;
 }
+
+
+@media (max-width:768px) {
+    .cities-wrap {
+        display:none;
+    }
+}
+
 .header-default {
     max-width: 100%;
     border-bottom: 1px solid var(--color-border);
-    background-color: var(--color-darker);
+    background-color: var(--blue);
     color: #fff;
     font-size: 12px;
     z-index: 99;
     position: relative;
 
     .logo {
+        padding:10px;
         a {
             display: flex;
             height: 70px;
@@ -151,16 +160,14 @@ text-align: center;
 
 
 .hamberger-button {
-    background: var(--color-blackest);
     border: 0 none;
     color: var(--color-white);
-    width: 40px;
+    width:40px;
     height: 40px;
-    font-size: 21px;
+    font-size: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
     cursor: pointer;
     svg {
         position: relative;
@@ -184,7 +191,6 @@ text-align: center;
     left: 0;
     background-color: var(--color-dark) !important;
     width: 100%;
-    height: 80px;
     animation: headerSticky .95s ease forwards;
     z-index: 9;
 }
@@ -196,5 +202,12 @@ text-align: center;
 
     100% {
         transform: translateY(0);
+    }
+}
+
+
+@media (max-width:768px) {
+    .header-default .logo a img {
+        max-height:60px;
     }
 }

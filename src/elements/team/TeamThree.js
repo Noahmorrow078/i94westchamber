@@ -1,70 +1,27 @@
 import React from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import {Link} from "react-router-dom";
-import Slider from 'react-slick';
+import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const teamData = [
-    {
-        image: 'team-04',
-        name: 'Sr Janen Sara',
-        designation: 'Sr Product Designer',
-    },
-    {
-        image: 'team-05',
-        name: 'Afsana Nila',
-        designation: 'App Developer',
-    },
-    {
-        image: 'team-06',
-        name: 'Afanan Sifa',
-        designation: 'Accounts Manager',
-    },
-    {
-        image: 'team-07',
-        name: 'Afanan Sifa',
-        designation: 'Accounts Manager',
-    },
-    {
-        image: 'team-07',
-        name: 'Afanan Sifa',
-        designation: 'Accounts Manager',
-    },
-    {
-        image: 'team-07',
-        name: 'Afanan Sifa',
-        designation: 'Accounts Manager',
-    },
-    {
-        image: 'team-07',
-        name: 'Afanan Sifa',
-        designation: 'Accounts Manager',
-    },
-]
+
+import { useRef, useEffect } from 'react';
 
 
 
 
 
-const TeamThree = ({column , teamStyle}) => {
-                        
-    const settings = {
-        dots: false,
-        centerMode: true,
-        infite:true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 3000
-    };
+
+const TeamThree = ({column , teamStyle, teamData}) => {
+
     
     return (
-        <div className="row row--30" style={{display:'flex', gap:'20px'}}>
-          <Slider {...settings}>
+       
+        <div style={{display:'flex', gap:'20px'}}>
+          <Swiper modules={[Navigation]} navigation slidesPerView={1}  centeredSlides={true}  initialSlide={2} breakpoints={{  768: {slidesPerView: 3,}}}>
 
             {teamData.map((data, index) => (
-                <div key={index}>
+                <SwiperSlide key={`${index}_${data.name}`} >
                    
                         <div className={`rn-team ${teamStyle}`}>
                             <div className="inner">
@@ -78,9 +35,10 @@ const TeamThree = ({column , teamStyle}) => {
                             </div>
                         </div>
             
-            </div>
+                 </SwiperSlide>
+
             ))}
-            </Slider>
+        </Swiper>
         </div>
     )
 }

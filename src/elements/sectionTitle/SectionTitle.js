@@ -3,7 +3,7 @@ import React from 'react';
 
 const SectionTitle = ({subtitle, title, description, textAlign, radiusRounded, color}) => {
     return (
-        <div className={`section-title ${textAlign}`}>
+        <div className={`section-title ${textAlign} m-center`}>
          
                 <h4 className={`subtitle ${radiusRounded} `}><span className="theme-gradient" dangerouslySetInnerHTML={{__html: subtitle}}></span></h4>
           

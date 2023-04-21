@@ -18,6 +18,9 @@
         &.dark {
             color:black !Important;
         }
+        .center {
+            text-align:center;
+        }
     }
     .description {
         br {
@@ -31,6 +34,9 @@
         &:empty {
             display: none;
         }
+    }
+    .center {
+        text-align:center;
     }
 }
 
@@ -48,6 +54,10 @@
 }
 
 
+.title-2 {
+    color:var(--orange);
+    text-align:center;
+}
 
 
 
@@ -55,4 +65,10 @@
 
 
 
+@media (max-width:768px) {
 
+     .m-center {
+        text-align:center;
+    }
+
+}

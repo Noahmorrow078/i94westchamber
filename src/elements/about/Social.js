@@ -19,7 +19,7 @@ const Social = () => {
                     <div className="col-lg-6 mt_md--30 mt_sm--30 col-sm-12">
                         <div className="thumbnail">
                             
-                            <img className="mag" src="./images/about/social2.png" alt=" " />
+                            <img className="mag m--auto" src="./images/about/social2.png" alt=" " />
                         </div>
                     </div>
 

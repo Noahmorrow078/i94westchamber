@@ -6,7 +6,7 @@ import BreadcrumbOne from "../breadcrumb/BreadcrumbOne";
 const Page = () => {
     return (
         <>
-            <SEO title="Team || Doob - React Business  Template" />
+            <SEO title="Title" />
             <Layout>
                 <BreadcrumbOne 
                     title="The Easiest Way To Create Website <br /> Quick Copy & Make site."

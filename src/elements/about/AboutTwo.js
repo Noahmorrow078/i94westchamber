@@ -13,11 +13,11 @@ const AboutTwo = () => {
     return (
         <div className="rwt-about-area about-style-2 rn-section-gap">
             <div className="container">
-                <div class="todo-wrapper">
+                <div className="todo-wrapper">
                     {thingsToDo.map((section, index) => (
-                        <div key={section.index} className="todo" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/todo/${section.image})`}}>
+                        <div key={`${section.index}_${section.title}`} className="todo" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/todo/${section.image})`}}>
                             <span>{section.title}</span>
-                            <div class="gradient"></div>
+                            <div className="gradient"></div>
                         </div>
                     ))}
                 </div>   

@@ -5,9 +5,10 @@ import PageScrollTop from './components/pageToTop/PageScrollTop'
 
 // Important Pages import Here 
 
-import Home from "./pages/Home";
-import JoinNow from "./pages/JoinNow";
-
+import Home from "./pages/MainPages/Home";
+import About from "./pages/MainPages/About";
+import Micronet from "./pages/MainPages/Micronet";
+import JoinNow from './pages/MainPages/JoinNow';
 
 // Pages import Here 
 import Splash from "./pages/Splash";
@@ -83,9 +84,13 @@ const App = () => {
         <Router>
             <PageScrollTop>
                 <Switch>
-                <Route path={`${process.env.PUBLIC_URL + "/join-now"}`} exact component={JoinNow}/>
+                <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Home}/>
+                <Route path={`${process.env.PUBLIC_URL + "/about"}`} exact component={About}/>
+                <Route path={`${process.env.PUBLIC_URL + "/micronet-template"}`} exact component={Micronet}/>
+                <Route path={`${process.env.PUBLIC_URL + "/the-chamber"}`} exact component={JoinNow}/>
 
-                    <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Home}/>
+                    
+                    
                     <Route path={`${process.env.PUBLIC_URL + "/business-consulting"}`} exact component={HomeDefault}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business-consulting-2"}`} exact component={BusinessConsulting2}/>
                     <Route path={`${process.env.PUBLIC_URL + "/business"}`} exact component={Business}/>

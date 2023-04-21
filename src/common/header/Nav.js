@@ -5,8 +5,8 @@ const Nav = () => {
     return (
         <ul className="mainmenu">
 
-<li className="has-droupdown"><Link to="/join-now">Join Now</Link></li>
-<li className="has-droupdown"><Link to="/contact">About</Link></li>
+<li className="has-droupdown"><Link to="/the-chamber">Join Now</Link></li>
+<li className="has-droupdown"><Link to="/about">About</Link></li>
 <li className="has-droupdown"><Link to="/contact">Resources</Link>
     <ul className="submenu">
         <li><Link to="#link">Hot Deals</Link></li>

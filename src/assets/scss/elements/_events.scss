@@ -25,6 +25,9 @@
         height:100%;
         z-index:1
     }
+    .event-time span {
+        transition:.3s;
+    }
 
     .event-cta {
         border-bottom-right-radius:20px;
@@ -38,7 +41,7 @@
         font-weight:800;
         letter-spacing:1px;
     }
-   &:hover 
+   &:hover .event-time span
    {transform:scale(1.1)}
  }
 

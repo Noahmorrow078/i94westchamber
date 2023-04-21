@@ -216,3 +216,32 @@
     }
 }
 
+
+@media (max-width:768px) {
+
+    .todo-wrapper .todo span {
+       font-size:40px; 
+       bottom: 40%;
+    }
+    .todo-wrapper .todo {
+        width: calc(50% - 20px);
+        min-height:140px;
+    }
+
+    .swiper-button-disabled {
+        opacity:0 !important;
+    }
+}
+
+.swiper-slide .rn-team {
+    opacity:.4;
+}
+
+.swiper-slide-active .rn-team {
+opacity:1;
+}
+
+
+.swiper-slide-active .rn-team h2 {
+    color:var(--orange);
+}

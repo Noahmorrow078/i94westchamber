@@ -37,6 +37,7 @@ const MobileMenu = ({show, onClose}) => {
                 </div>
                 <Nav />
             </div>
+            <div onClick={onClose} className="close-section"></div>
         </div>
     )
 }
