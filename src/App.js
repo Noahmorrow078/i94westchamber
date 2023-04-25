@@ -86,7 +86,7 @@ const App = () => {
             <PageScrollTop>
                 <Switch>
                 <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Home}/>
-                <Route path={`${process.env.PUBLIC_URL + "/about"}`} exact component={About}/>
+                <Route path={"/about"} exact component={About}/>
                 <Route path={`${process.env.PUBLIC_URL + "/micronet-template"}`} exact component={Micronet}/>
                 <Route path={`${process.env.PUBLIC_URL + "/the-chamber"}`} exact component={JoinNow}/>
                 <Route path={`${process.env.PUBLIC_URL + "/scholarship"}`} exact component={Scholarship}/>
