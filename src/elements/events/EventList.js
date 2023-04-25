@@ -14,7 +14,7 @@ const EventList = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('https://business.i94westchamber.org/events_upcoming?rendermode=json&version=3&limit=10&catgid=3')
+    axios.get('https://business.i94westchamber.org/events_upcoming?rendermode=json&version=3&limit=10&catgid=3/')
       .then(response => {
         const { Data } = response.data;
         if(Data) {
