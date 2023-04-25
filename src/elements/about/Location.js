@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Mailchimp from 'react-mailchimp-form'
 
 const Location = () => {
     return (
@@ -13,9 +13,44 @@ const Location = () => {
               
 
                     <div className="col-lg-6 mt_md--30 mt_sm--30 col-sm-12">
-                        <div className="thumbnail">
-                            <img className="mag m--auto" src="./images/about/form.png" alt=" " />
-                        </div>
+                    <Mailchimp
+                        action='https://i94westchamber.us3.list-manage.com/subscribe/post?u=316c10e2bd35b1a092de997e0&amp;id=f4fb8bbfe0&amp;f_id=0052bbe3f0' 
+                        
+                        //Adding multiple fields:
+                        fields={[
+                            {
+                            name: 'EMAIL',
+                            placeholder: 'Email',
+                            type: 'email',
+                            required: true
+                            },
+                            {
+                            name: 'FNAME',
+                            placeholder: ' First Name',
+                            type: 'text',
+                            required: true
+                            }, 
+                            {
+                            name: 'LNAME',
+                            placeholder: 'name',
+                            type: 'text',
+                            required: true
+                            }
+                        ]}
+                        // Change predetermined language
+                        messages = {
+                            {
+                            sending: "Sending...",
+                            success: "Thank you for subscribing!",
+                            error: "An unexpected internal error has occurred.",
+                            empty: "You must write an e-mail.",
+                            duplicate: "Too many subscribe attempts for this email address",
+                            button: "Subscribe!"
+                            }
+                        }
+                        // Add a personalized class
+                        className='<YOUR_CLASSNAME>'
+                        />
                     </div>
 
 

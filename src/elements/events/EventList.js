@@ -39,12 +39,15 @@ const EventList = () => {
       ) : (
         <Swiper 
           modules={[Navigation]} 
-          slidesPerView={currentSlide > 0 ? 1 : 1.40} 
+          slidesPerView={1}
           navigation 
           spaceBetween={20}  
           breakpoints={{  
             768: {
               slidesPerView: 3,
+            },
+            320: {
+              slidesPerView: 1,
             }
           }}
           onSlideChange={handleSlideChange}

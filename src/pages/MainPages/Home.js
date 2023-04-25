@@ -24,6 +24,8 @@ import PricingTwo from '../../elements/pricing/PricingTwo';
 import CalltoActionFive from '../../elements/calltoaction/CalltoActionFive';
 import Slider from '../../elements/octoSlider/slider'
 
+import ContactOne from '../../elements/contact/ContactOne';
+
 const Home = () => {
     return (
         <>
@@ -98,7 +100,7 @@ const Home = () => {
                 <Separator />
                     <Aspire/>
                 <Separator />  
-                    <Location/>
+                    <ContactOne/>
 
                 <FooterOne />
                 <Copyright />

@@ -9,21 +9,21 @@ const HeaderTopBar = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
-                            <p><a href="#link">Become a Member now! <FiChevronRight /></a></p>
+                            <p><a href="https://business.i94westchamber.org/member/newmemberapp">Become a Member now! <FiChevronRight /></a></p>
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-12">
                         <div className="header-right">
                             <div className="address-content">
-                                <p><FiMapPin /><span>Minnesota, USA</span></p>
+                                <p><FiMapPin /><span>Rogers, MN 55374</span></p>
                                 <p><FiPhone /><span><a href="tel:7634282921">763-428-2921</a></span></p>
                             </div>
                             <div className="social-icon-wrapper">
                                 <ul className="social-icon social-default icon-naked">
-                                    <li><Link to="twitter.com"><FiFacebook /></Link></li>
-                                    <li><Link to="twitter.com"><FiTwitter /></Link></li>
-                                    <li><Link to="instagram.com"><FiInstagram /></Link></li>
-                                    <li><Link to="linkdin.com"><FiLinkedin /></Link></li>
+                                    <li><Link to="https://www.facebook.com/I94West" target="_blank"><FiFacebook /></Link></li>
+                                    <li><Link to="https://twitter.com/I94West" target="_blank"><FiTwitter /></Link></li>
+                                    <li><Link to="https://www.instagram.com/i94westchamber/" target="_blank"><FiInstagram /></Link></li>
+                                    <li><Link to="https://www.linkedin.com/company/i-94-west-chamber-of-" target="_blank"><FiLinkedin /></Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -9,6 +9,7 @@ import Home from "./pages/MainPages/Home";
 import About from "./pages/MainPages/About";
 import Micronet from "./pages/MainPages/Micronet";
 import JoinNow from './pages/MainPages/JoinNow';
+import Scholarship from './pages/MainPages/Scholarship';
 
 // Pages import Here 
 import Splash from "./pages/Splash";
@@ -88,6 +89,7 @@ const App = () => {
                 <Route path={`${process.env.PUBLIC_URL + "/about"}`} exact component={About}/>
                 <Route path={`${process.env.PUBLIC_URL + "/micronet-template"}`} exact component={Micronet}/>
                 <Route path={`${process.env.PUBLIC_URL + "/the-chamber"}`} exact component={JoinNow}/>
+                <Route path={`${process.env.PUBLIC_URL + "/scholarship"}`} exact component={Scholarship}/>
 
                     
                     

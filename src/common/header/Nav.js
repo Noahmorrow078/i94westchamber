@@ -5,14 +5,14 @@ const Nav = () => {
     return (
         <ul className="mainmenu">
 
-<li className="has-droupdown"><Link to="/the-chamber">Join Now</Link></li>
+<li className="has-droupdown"><a href="https://business.i94westchamber.org/member/newmemberapp" target="_blank">Join Now</a></li>
 <li className="has-droupdown"><Link to="/about">About</Link></li>
-<li className="has-droupdown"><Link to="/contact">Resources</Link>
+<li className="has-droupdown"><Link to="#">Resources</Link>
     <ul className="submenu">
-        <li><Link to="#link">Hot Deals</Link></li>
-        <li><Link to="#link">Employment</Link></li>
-        <li><Link to="#link">Join A Committee</Link></li>
-        <li><Link to="#link">Scholarship Program</Link></li>
+        <li><a href="https://business.i94westchamber.org//hotdeals">Hot Deals</a></li>
+        <li><Link to="#">Employment</Link></li>
+        <li><Link to="#">Join A Committee</Link></li>
+        <li><Link to="/scholarship">Scholarship Program</Link></li>
     </ul>
 </li>
 <li className="has-droupdown"><Link to="#link">Members Only</Link>
@@ -21,7 +21,7 @@ const Nav = () => {
         <li><a href="https://business.i94westchamber.org/login">Login</a></li>
     </ul>
 </li>
-
+<li className="has-droupdown"><a href="https://business.i94westchamber.org/contact/" >Contact</a></li>
 {/* 
             <li className="has-droupdown"><Link to="#">Home</Link>
                 <ul className="submenu">
