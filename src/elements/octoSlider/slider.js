@@ -5,6 +5,9 @@ const Slider = () => {
   const [count, setCount] = useState(0);
   const [interacted, setInteracted] = useState(false);
 
+  const [touchStart, setTouchStart] = useState(0);
+const [touchEnd, setTouchEnd] = useState(0);
+
   const sections = [
     { num: 0, title: 'GET BUSINESS SUPPORT', color: '#fcb443', text: 'The chamber is the region’s #1 business concierge, from bulk mailings to notary public. Certificate Of Origin Services'},
     { num: 1, title: 'EXPAND YOUR NETWORK', color: '#f7941d', text: 'It is not just who you know, its who others know. Networking is powerful. Add 470+ professionals to your network.' },
@@ -35,14 +38,41 @@ return () => clearInterval(intervalId);
   const translateY = (index) => (index === 2 ? '200%' : '-40px');
   const scale = (index) => (index === 2 ? '1.6' : '1');
 
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+  
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+  
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 50) {
+      // swiped left
+      setActiveIndex((activeIndex + 1) % sections.length);
+    }
+  
+    if (touchStart - touchEnd < -50) {
+      // swiped right
+      setActiveIndex((activeIndex - 1 + sections.length) % sections.length);
+    }
+  };
+
+
   return (
     <div className="slider-wrapper">
         <div className="container">
         <div className="row rn-section-gap">
 
             <div className="col-lg-6" style={{position:'relative'}}>
-                <div className="slider-inner" style={{ width: '525px', height: '525px' }}>
-                        <div className="slider-origin">
+              <div
+                className="slider-inner"
+                style={{ width: "525px", height: "525px" }}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+              >                        
+                    <div className="slider-origin">
                             {sections.map((section, index) => (
                             <div
                                 key={section.num}

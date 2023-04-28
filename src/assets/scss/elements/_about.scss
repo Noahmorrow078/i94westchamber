@@ -33,8 +33,7 @@
 
   
   .todo:hover span {
-    letter-spacing: 4px;
-    transform: translate(-50%, -70%);
+    letter-spacing: 15px;
   }
 .todo-wrapper {
     display:flex; flex-wrap:wrap;
@@ -50,11 +49,20 @@
   border: 3px solid var(--color-secondary);
   transition:.4s;
   background-position: center center;
-  &:hover {
-    background-size:150%;
-  } 
+  background-size: cover;
+  overflow:hidden;
+  &:after { 
+    content:"";
+    position:absolute; top:0;right:0;bottom:0;left:0;
+    background:inherit;
+    transition:inherit;
+  }
+  &:hover::after { 
+    transform: scale(1.2);
+  }
   .gradient {
     z-index:1;
+    position:relative;
     width:100%;
     height:100%;
     top:0;
