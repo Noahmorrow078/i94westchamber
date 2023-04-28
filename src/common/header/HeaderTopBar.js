@@ -7,12 +7,14 @@ const HeaderTopBar = () => {
         <div className="header-top-bar">
             <div className="container">
                 <div className="row align-items-center">
+                    <div className="col-lg-2 col-md-12 col-12">
+                    </div>
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
                             <p><a href="https://business.i94westchamber.org/member/newmemberapp">Become a Member now! <FiChevronRight /></a></p>
                         </div>
                     </div>
-                    <div className="col-lg-8 col-md-12 col-12">
+                    <div className="col-lg-6 col-md-12 col-12">
                         <div className="header-right">
                             <div className="address-content">
                                 <p><FiMapPin /><span>Rogers, MN 55374</span></p>

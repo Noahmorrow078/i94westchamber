@@ -14,9 +14,10 @@ const EventList = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('https://business.i94westchamber.org/events_upcoming/?rendermode=json&version=3&limit=10&catgid=3')
+    axios.get('https://business.i94westchamber.org/events/UpcomingEventImages?limit=10&renderMode=json')
       .then(response => {
-        const { Data } = response.data;
+        const  Data  = response.data;
+        console.log(response.data)
         if(Data) {
           setData(Data);
           setLoading(false);
@@ -55,11 +56,11 @@ const EventList = () => {
           {data.map((item, index) => (
             <SwiperSlide key={index}>
               <div key={item.id} class="event-item">
-                <a href={item.URL}></a>
+                <a href={item.Url}></a>
                 <div class="event-name">{item.Name}</div>
                 <div className="event-time">
-                  <span className="event-month">{moment(item.StartDate).format("MMMM")}</span>
-                  <span className="event-day">{moment(item.EndDate).format(" D")}</span>
+                  <span className="event-month">{moment(item.AltData).format("MMMM")}</span>
+                  <span className="event-day">{moment(item.AltData).format(" D")}</span>
                 </div>
                 <div class="event-cta">CLICK FOR MORE INFO</div>
               </div>

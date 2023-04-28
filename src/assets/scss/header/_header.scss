@@ -149,7 +149,7 @@ text-align: center;
     }
 
     .header-default {
-        background-color: var(--color-primary);
+        background-color: var(--blue);
         background-image: none;
 
         @media #{$md-layout} {
@@ -211,17 +211,22 @@ text-align: center;
 }
 
 
-@media (max-width:768px) {
-    .header-default .logo a img {
-        max-height:60px;
-    }
-}
-
 .Logo {
     max-width:210px;
     position:relative;
     display: block;
+    margin-top:-45px;
 }
 .header-default.sticky .Logo {
 max-width:140px;
 }
+
+@media (max-width:768px) {
+    .header-default .logo a img {
+        max-height:60px;
+    }
+    .Logo {
+        margin-top:0px;
+    }
+}
+
