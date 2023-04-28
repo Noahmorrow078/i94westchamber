@@ -5,7 +5,7 @@ const SectionTitle = ({subtitle, title, description, textAlign, radiusRounded, c
     return (
         <div className={`section-title ${textAlign} m-center`}>
          
-                <h4 className={`subtitle ${radiusRounded} `}><span className="theme-gradient" dangerouslySetInnerHTML={{__html: subtitle}}></span></h4>
+                {subtitle ? <h4 className={`subtitle ${radiusRounded} `}><span className="theme-gradient" dangerouslySetInnerHTML={{__html: subtitle}}></span></h4> : null }
           
                 <h2 className={`title w-600 mb--20 ${color}`} dangerouslySetInnerHTML={{__html: title}}></h2>
            

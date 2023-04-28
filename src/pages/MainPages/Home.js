@@ -53,7 +53,7 @@ const Home = () => {
                         <SectionTitle
                                         textAlign = "text-left"
                                         radiusRounded = ""
-                                        subtitle = "I94 Events"
+                                        
                                         title = "MONTHLY GATHERINGS"
                                         description = ""
                                         color="dark"
@@ -75,7 +75,6 @@ const Home = () => {
                         <SectionTitle
                                         textAlign = "text-left"
                                         radiusRounded = ""
-                                        subtitle = "I94 Events"
                                         title = "SIGNATURE EVENTS"
                                         description = ""
                                         color="dark"

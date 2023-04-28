@@ -127,6 +127,7 @@ text-align: center;
     right: 0;
     width: auto;
     z-index: 99;
+    background-color:var(--blue);
 
     @media #{$md-layout} {
         position: relative;
@@ -140,24 +141,25 @@ text-align: center;
         background-color: var(--color-primary);
 
         @media #{$md-layout} {
-            background-color: var(--color-darker);
+            background-color: var(--blue);
         }
 
         @media #{$sm-layout} {
-            background-color: var(--color-darker);
+            background-color: var(--blue);
         }
     }
 
     .header-default {
         background-color: var(--blue);
         background-image: none;
+        border-bottom:5px solid white;
 
         @media #{$md-layout} {
-            background-color: var(--color-darker);
+            background-color: var(--blue);
         }
 
         @media #{$sm-layout} {
-            background-color: var(--color-darker);
+            background-color: var(--blue);
         }
     }
 }
@@ -216,9 +218,11 @@ text-align: center;
     position:relative;
     display: block;
     margin-top:-45px;
+    background-color:var(--blue);
 }
 .header-default.sticky .Logo {
 max-width:140px;
+margin-top:0px;
 }
 
 @media (max-width:768px) {
@@ -229,4 +233,3 @@ max-width:140px;
         margin-top:0px;
     }
 }
-

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const HeaderTopBar = () => {
     return (
-        <div className="header-top-bar">
-            <div className="container">
+        <div className="header-top-bar container">
+   
                 <div className="row align-items-center">
                     <div className="col-lg-2 col-md-12 col-12">
                     </div>
@@ -27,7 +27,7 @@ const HeaderTopBar = () => {
                                     <li><Link to="https://www.instagram.com/i94westchamber/" target="_blank"><FiInstagram /></Link></li>
                                     <li><Link to="https://www.linkedin.com/company/i-94-west-chamber-of-" target="_blank"><FiLinkedin /></Link></li>
                                 </ul>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
