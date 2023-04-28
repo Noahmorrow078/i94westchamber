@@ -12,7 +12,7 @@ const Social = () => {
 
                 <div className="col-lg-6 col-sm-12">
                         <div className="thumbnail">
-                            <img className="mag" src="./images/about/social1.png" alt=" " />
+                            <a href="https://www.facebook.com/I94West"><img className="mag" src="./images/about/social1.png" alt=" " /></a>
                         </div>
                     </div>
               

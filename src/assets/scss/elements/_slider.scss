@@ -26,9 +26,10 @@
             transform: translate(-50%, -50%);
     FONT-SIZE: 103PX;
     OPACITY: .3;}
-.slider-item h2 {FONT-weight:bolder !IMportant; color:white !Important; text-align:center; font-size:18px !Important; top: 20px; position:relative;}
+.slider-item h2 {FONT-weight:bolder !IMportant; color:white !Important; text-align:center; font-size:18px !Important; 
+    top: 12px; position:relative;}
 .slider-item p {    text-align: center;
-    top: 45px;
+    top: 40px;
     position: relative;
 }
 .slider-item{
@@ -92,9 +93,49 @@
 }
 
 .slider-item:not(.active){
-	-webkit-filter: brightness(.6);
-	        filter: brightness(.6);
+	-webkit-filter: brightness(.9);
+	        filter: brightness(.9);
 }
+
+
+.slider-title {
+    text-align:center;
+    padding-top:50px;
+    margin-top:20px;
+}
+
+.slider-title h2 {
+    font-size: 60px;
+    margin-bottom:0px;
+}
+.slider-title span {
+    font-size:28px;
+    font-weight: 500;
+}
+
+.slider-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.slider-text > div {
+    margin-top:-80px;
+    display:block;
+    position:relative;
+}
+
+.slider-text H3 {
+    text-transform: capitalize;
+    font-size:60px;
+    color:var(--blue);
+}
+
+.slider-text p {
+    font-size:25px;
+}
+
 @media (max-width: 768px) {
     .slider-item{
 
@@ -117,10 +158,46 @@
     
     body .slider-item p {
         text-align: center !important;
-        top: 25px !important;
+        top:25px;
         position: relative;
         font-size: 10px;
         line-height: 1 !important;
+    }
+
+    .slider-text H3 {
+        font-size:30px;
+    }
+
+    .slider-title h2 {
+        font-size: 40px;
+     
+    }
+    .slider-title span {
+        font-size:20px;
+    }
+    .slider-title {
+        background:white;
+        width:100%;
+    }
+    .slider-text > div {
+        margin-top:0px;
+    }
+    .slider-text {
+        background:white;
+        padding-top:20px;
+        padding-bottom:10px
+    }
+    .slider-text p {
+        font-size:18px;
+    }
+
+    .slider-text {
+        min-height:400px;
+        align-items: flex-start;
+    }
+
+    .slider-wrapper .container {
+        background-color:#ffffffa3;
     }
 
 }

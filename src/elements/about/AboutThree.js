@@ -19,7 +19,6 @@ const AboutThree = () => {
                         <div className="content">
                             <div className="section-title">
 
-                                    <h4 className="subtitle"><span className="theme-gradient">I94 West Chamber</span></h4>
                                     <h2 className="title mt--10">About The Chamber</h2>
                                
 

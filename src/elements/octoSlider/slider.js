@@ -9,16 +9,16 @@ const Slider = () => {
 const [touchEnd, setTouchEnd] = useState(0);
 
   const sections = [
-    { num: 0, title: 'GET BUSINESS SUPPORT', color: '#fcb443', text: 'The chamber is the region’s #1 business concierge, from bulk mailings to notary public. Certificate Of Origin Services'},
-    { num: 1, title: 'EXPAND YOUR NETWORK', color: '#f7941d', text: 'It is not just who you know, its who others know. Networking is powerful. Add 470+ professionals to your network.' },
-    { num: 2, title: 'ATTEND YOUR EVENTS', color: '#f26c67', text: 'The Chamber supports 4 monthly networking groups, host 8 annual signature events, and more! 3x the exposure for your business through the chamber.' },
-    { num: 3, title: 'EARN CREDIBILITY', color: '#023a5a', text: 'Raise your reputation through membership. Learn More' },
-    { num: 4, title: 'IMPROVE YOUR SKILLS', color: '#2f97d3',text: 'The Chamber offers education & training throughout the year and online.' },
-    { num: 5, title: 'INCREASE YOUR VISIBILITY', color: '#32bfbf', text:'social media, chamber website, bigfoot, sponsorships, & Aspire Guide and more!' },
-    { num: 6, title: 'GAIN AN ADVOCATE', color: '#a0b452', text:'The chamber is a strong, unified voice that advocates for your business.' },
-    { num: 7, title: 'SHOP CHAMBER', color: '#fcb443', text:'It pays to do business with a member & share your hot deals.' },
-    { num: 8, title: 'RECRUIT TOP TALENT', color: '#3a3a3c', text:'List your job openings on the chamber website to recruit your next team member.' },
-    { num: 9, title: 'MAKE MORE MONEY', color: '#16ab8f', text:'Build your brand, expand your business. Referrals & recommendations pay!' },
+    { num: 0, title: 'GET BUSINESS SUPPORT', color: '#1668b0', text: 'The chamber is the region’s #1 business concierge, from bulk mailings to notary public. Certificate Of Origin Services'},
+    { num: 1, title: 'EXPAND YOUR NETWORK', color: '#61a9e8', text: 'It is not just who you know, its who others know. Networking is powerful. Add 470+ professionals to your network.' },
+    { num: 2, title: 'ATTEND YOUR EVENTS', color: '#1b86e3', text: 'The Chamber supports 4 monthly networking groups, host 8 annual signature events, and more! 3x the exposure for your business through the chamber.' },
+    { num: 3, title: 'EARN MORE CREDIBILITY', color: '#955c00', text: 'Raise your reputation through membership. Learn More' },
+    { num: 4, title: 'IMPROVE YOUR SKILLS', color: '#e39619',text: 'The Chamber offers education & training throughout the year and online.' },
+    { num: 5, title: 'INCREASE YOUR VISIBILITY', color: '#fdb913', text:'social media, chamber website, bigfoot, sponsorships, & Aspire Guide and more!' },
+    { num: 6, title: 'GAIN AN ADVOCATE', color: '#e3a410', text:'The chamber is a strong, unified voice that advocates for your business.' },
+    { num: 7, title: 'SHOP THE CHAMBER', color: '#0b3a61', text:'It pays to do business with a member & share your hot deals.' },
+    { num: 8, title: 'RECRUIT TOP TALENT', color: '#2a4963', text:'List your job openings on the chamber website to recruit your next team member.' },
+    { num: 9, title: 'MAKE MORE MONEY', color: '#1668b0', text:'Build your brand, expand your business. Referrals & recommendations pay!' },
   ];
 
   useEffect(() => {
@@ -60,8 +60,13 @@ return () => clearInterval(intervalId);
 
 
   return (
-    <div className="slider-wrapper">
+    <div className="slider-wrapper" style={{backgroundImage:'url(./images/slider-bg.jpg)', backgroundSize:'cover'}}>
         <div className="container">
+          <div className="slider-title">
+            <h2 style={{color:'var(--orange)'}}>Chamber Benifits</h2>
+            <span style={{color:'black'}}>How Can We help your Business</span>
+          </div>
+
         <div className="row rn-section-gap">
 
             <div className="col-lg-6" style={{position:'relative'}}>
@@ -87,10 +92,9 @@ return () => clearInterval(intervalId);
 
                                 onClick={() => {setActiveIndex(index ); setInteracted(true)}}
                             >
-                                <span className="num">{section.num + 1}</span>
-                                <p>{section.title.split(' ')[0]}</p>
+                                <p>{ section.title.split(" ").slice(0,2).join(' ')}</p>
                                 <p></p>
-                                <h2>{section.title.split(' ').slice(1).join(' ')}</h2>
+                                <h2>{section.title.split(' ').slice(2).join(' ')}</h2>
                         
 
                             </div>
@@ -99,12 +103,12 @@ return () => clearInterval(intervalId);
                     </div>
                 </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 slider-text">
             {sections.map((section, index) => (
                 section.num  == activeIndex ? 
                             <div key={section.title}>
-                            <h3 style={{color:'black'}}>{section.title}</h3>
-                            <p style={{color:'var(--color-primary)', fontWeight:'800'}}>{section.text}</p>
+                            <h3 >{section.title}</h3>
+                            <p style={{color:'var(--color-primary)', fontWeight:'200'}}>{section.text}</p>
                             </div>
                             : ''
 
