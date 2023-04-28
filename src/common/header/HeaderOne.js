@@ -7,6 +7,11 @@ import Darkmode from "./Darkmode";
 import useStickyHeader from "./useStickyHeader";
 import HeaderBottomBar from "./HeaderBottomBar";
 
+import React from 'react'
+import Lottie from 'react-lottie';
+
+import animationData from '../../logo.json'
+
 const HeaderOne = ({btnStyle, HeaderSTyle}) => {
     const [ofcanvasShow, setOffcanvasShow] = useState(false);
     const onCanvasHandler = () => {
@@ -20,17 +25,33 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
     
     const checkChange = (value) => {
       setCheck(value);
+      this.state = {isStopped: false, isPaused: false};
+
+    };
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
     };
     return (
+        
         <>
             <header ref={ref} className={`rn-header header-default ${HeaderSTyle} ${headerClasses}`}>
                 <div className="container position-relative">
                     <div className="row align-items-center row--0">
                         <div className="col-lg-3 col-md-6 col-4">
-                            <Logo 
-                                image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
-                                image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
-                            />
+                            <a href="/" className="Logo">
+                            <Lottie 
+                        options={defaultOptions}
+                        height={'auto'}
+                        width={'100%'}
+                        />
+
+                            </a>
                         </div>
                         <div className="col-lg-9 col-md-6 col-8 position-static">
                             <div className="header-right">
