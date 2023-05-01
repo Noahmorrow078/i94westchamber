@@ -10,6 +10,7 @@ import About from "./pages/MainPages/About";
 import Micronet from "./pages/MainPages/Micronet";
 import JoinNow from './pages/MainPages/JoinNow';
 import Scholarship from './pages/MainPages/Scholarship';
+import NotFound from './pages/MainPages/NotFound';
 
 // Pages import Here 
 import Splash from "./pages/Splash";
@@ -151,6 +152,8 @@ const App = () => {
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio-grid-layout"}`} exact component={PortfolioGrid}/>
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio-box-layout"}`} exact component={PortfolioBoxLayout}/>
                     <Route path={`${process.env.PUBLIC_URL + "/portfolio-details/:id"}`} exact component={PortfolioDetails}/>
+                    
+                    <Route component={NotFound} />
 
 
                 </Switch>

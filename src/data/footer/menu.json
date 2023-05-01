@@ -1,6 +1,4 @@
 [
-
-
     {
         "id": 1,
         "title": "Your Chamber",
@@ -8,7 +6,7 @@
             {
                 "id": 1,
                 "text": "The Chamber",
-                "url": "/about-us"
+                "url": "/about"
             },
             {
                 "id": 2,

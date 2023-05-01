@@ -6,8 +6,8 @@ import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
 const ContactOne = () => {
     return (
         <>
-            <div className="row mt--40 row--15 m--auto container-xxl">
-            <div className="col-lg-5 mt_md--30 mt_sm--30 mb--20 pl--50">
+            <div className="row mt--40 row--15 m--auto container-xxl justify-content-center">
+            <div className="col-lg-5 mt_md--30 mt_sm--30 mb--20 ">
                     <GoogleMapStyle />
                 </div>
                 <div className="col-lg-7 row">
@@ -33,7 +33,7 @@ const ContactOne = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-12 col-md-12 col-12">
+                            <div className="col-lg-12 col-md-12 col-12 mb--100">
                                 <div className="rn-address">
                                     <div className="icon">
                                         <FiMapPin />
