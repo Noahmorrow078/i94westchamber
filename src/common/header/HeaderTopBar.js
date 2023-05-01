@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const HeaderTopBar = () => {
     return (
-        <div className="header-top-bar container">
-   
+        <div className="header-top-bar ">
+            <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-2 col-md-12 col-12">
                     </div>
@@ -31,6 +31,7 @@ const HeaderTopBar = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     )

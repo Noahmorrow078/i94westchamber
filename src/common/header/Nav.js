@@ -13,7 +13,7 @@ const Nav = () => {
         <li><Link to="#">Employment</Link></li>
         <li><Link to="#">Join A Committee</Link></li>
         <li><Link to="/scholarship">Scholarship Program</Link></li>
-        <li><a href="#">Aspire Guide</a></li>
+        <li><a href="/aspire-guide">Aspire Guide</a></li>
     </ul>
 </li>
 <li className="has-droupdown"><Link to="#link">Members Only</Link>

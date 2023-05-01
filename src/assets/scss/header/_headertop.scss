@@ -78,9 +78,12 @@
     Header Top Bar  
 ----------------------------*/
 .header-top-bar {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--color-border);
     background-color: var(--blue);
+    > .container {
+        border-bottom: 1px solid var(--color-border);
+        padding: 10px 0;
+
+    }
     .header-left {
         @media #{$md-layout} {
             text-align: center;

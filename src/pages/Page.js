@@ -15,7 +15,7 @@ const Page = () => {
                     currentUrl="Team"
                 />
                 <div className="main-content">
-
+                <iframe allow="clipboard-write" allowfullscreen="" id="DocPageReaderIframe" src="https://issuu.com/rdr?p=1&amp;d=aspire_2023_interactive&amp;u=i94westchamber" ></iframe>
                  
                 </div>
             </Layout>
