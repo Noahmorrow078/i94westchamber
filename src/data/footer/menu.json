@@ -1,0 +1,83 @@
+[
+
+
+    {
+        "id": 1,
+        "title": "Your Chamber",
+        "quicklink": [
+            {
+                "id": 1,
+                "text": "The Chamber",
+                "url": "/about-us"
+            },
+            {
+                "id": 2,
+                "text": "Certificates of Origin",
+                "url": "/portfolio"
+            },
+            {
+                "id": 3,
+                "text": "Business Directory",
+                "url": "/contact"
+            },
+            {
+                "id": 4,
+                "text": "Aspire Guide",
+                "url": "/service"
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "title": "Resources",
+        "quicklink": [
+            {
+                "id": 1,
+                "text": "Contact Us",
+                "url": "/contact"
+            },
+            {
+                "id": 2,
+                "text": "Join Us",
+                "url": "/"
+            },
+            {
+                "id": 3,
+                "text": "Scholarship Program",
+                "url": "/scholarship"
+            },
+            {
+                "id": 4,
+                "text": "Job Search",
+                "url": "/timeline"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "",
+        "quicklink": [
+            {
+                "id": 1,
+                "text": " ",
+                "url": ""
+            },
+            {
+                "id": 2,
+                "text": "Hot Deals",
+                "url": "/"
+            },
+            {
+                "id": 3,
+                "text": "Join A Committee",
+                "url": "/scholarship"
+            },
+            {
+                "id": 4,
+                "text": "Events",
+                "url": "/timeline"
+            }
+        ]
+    }
+]

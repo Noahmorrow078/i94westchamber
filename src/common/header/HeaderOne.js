@@ -46,10 +46,10 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
                         <div className="col-lg-3 col-md-6 col-4">
                             <a href="/" className="Logo">
                             <Lottie 
-                        options={defaultOptions}
-                        height={'auto'}
-                        width={'100%'}
-                        />
+                                options={defaultOptions}
+                                height={'auto'}
+                                width={'100%'}
+                            />
 
                             </a>
                         </div>

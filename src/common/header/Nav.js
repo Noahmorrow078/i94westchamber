@@ -13,11 +13,14 @@ const Nav = () => {
         <li><Link to="#">Employment</Link></li>
         <li><Link to="#">Join A Committee</Link></li>
         <li><Link to="/scholarship">Scholarship Program</Link></li>
+        <li><a href="#">Aspire Guide</a></li>
     </ul>
 </li>
 <li className="has-droupdown"><Link to="#link">Members Only</Link>
     <ul className="submenu">
         <li><a href="https://business.i94westchamber.org/list" >Directory</a></li>
+        <li><a href="https://business.i94westchamber.org/login">Login</a></li>
+        <li><a href="https://business.i94westchamber.org/login">Certificates of Origin</a></li>
         <li><a href="https://business.i94westchamber.org/login">Login</a></li>
     </ul>
 </li>
