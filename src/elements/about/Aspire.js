@@ -5,13 +5,13 @@ import { FiArrowRight, FiCheck } from "react-icons/fi";
 
 const Aspire = () => {
     return (
-        <div className="rwt-aspire-area rn-section-gap" style={{backgroundColor: 'white'}}>
+        <div className="rwt-aspire-area rn-section-gap" style={{backgroundColor: 'white', 'position':'relative','overflow':'hidden'}}>
             <div className="container">
                 <div className="row row--30 align-items-center">
 
                 <div className="col-lg-5">
                         <div className="thumbnail">
-                            <img className="mag" src="./images/about/magazine.png" alt="Aspire Guide" />
+                            <img className="mag magazine" src="./images/about/magazine.jpg" alt="Aspire Guide" />
                         </div>
                     </div>
               
