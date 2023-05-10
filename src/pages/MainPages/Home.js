@@ -59,6 +59,7 @@ const Home = () => {
                                         title = "MONTHLY GATHERINGS"
                                         description = ""
                                         color="dark"
+                                        className="mb--100"
                                     />
                      
                         <EventList/>

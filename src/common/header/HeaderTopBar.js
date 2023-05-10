@@ -11,7 +11,7 @@ const HeaderTopBar = () => {
                     </div>
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
-                            <p><a href="https://business.i94westchamber.org/member/newmemberapp">Become a Member now! <FiChevronRight /></a></p>
+                            <p><a href="https://business.i94westchamber.org/member/newmemberapp">Download the app!<FiChevronRight /></a></p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12">

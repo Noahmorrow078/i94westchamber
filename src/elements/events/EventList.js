@@ -45,7 +45,7 @@ const EventList = () => {
           spaceBetween={20}  
           breakpoints={{  
             768: {
-              slidesPerView: 3,
+              slidesPerView: 3.5,
             },
             320: {
               slidesPerView: 1,
