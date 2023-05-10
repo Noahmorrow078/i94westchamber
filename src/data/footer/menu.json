@@ -11,17 +11,17 @@
             {
                 "id": 2,
                 "text": "Certificates of Origin",
-                "url": "/portfolio"
+                "url": "/#"
             },
             {
                 "id": 3,
                 "text": "Business Directory",
-                "url": "/contact"
+                "url": "https://business.i94westchamber.org/list"
             },
             {
                 "id": 4,
                 "text": "Aspire Guide",
-                "url": "/service"
+                "url": "/aspire-guide"
             }
         ]
     },
@@ -33,12 +33,12 @@
             {
                 "id": 1,
                 "text": "Contact Us",
-                "url": "/contact"
+                "url": "https://business.i94westchamber.org/contact/"
             },
             {
                 "id": 2,
-                "text": "Join Us",
-                "url": "/"
+                "text": "Join The Chamber",
+                "url": "https://business.i94westchamber.org/member/newmemberapp"
             },
             {
                 "id": 3,
@@ -47,8 +47,8 @@
             },
             {
                 "id": 4,
-                "text": "Job Search",
-                "url": "/timeline"
+                "text": "Employment",
+                "url": "https://business.i94westchamber.org/jobs"
             }
         ]
     },
@@ -64,17 +64,17 @@
             {
                 "id": 2,
                 "text": "Hot Deals",
-                "url": "/"
+                "url": "https://business.i94westchamber.org/hotdeals"
             },
             {
                 "id": 3,
                 "text": "Join A Committee",
-                "url": "/scholarship"
+                "url": "/join-a-committee"
             },
             {
                 "id": 4,
                 "text": "Events",
-                "url": "/timeline"
+                "url": "https://business.i94westchamber.org/events/"
             }
         ]
     }

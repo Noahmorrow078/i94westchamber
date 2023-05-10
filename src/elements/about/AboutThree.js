@@ -23,7 +23,7 @@ const AboutThree = () => {
                                
 
                            
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quod autem sequi reprehenderit labore consequuntur excepturi voluptatibus omnis similique qui unde eligendi tempora, ea at, laudantium nostrum minus pariatur quasi!</p>
+                                    <p>The I-94 west chamber of commerce is here to serve your business and help you succeed. To learn more about us click the link below.</p>
 
                                     <ul className="list-numbers">
                                         {aboutItems.map((item, index) => (
@@ -36,7 +36,7 @@ const AboutThree = () => {
                                     </ul>
                                
                                     <div className="read-more-btn mt--40 ">
-                                        <Link className="btn-default btn-icon m--auto" to="#">More About Us <i className="icon"><FiArrowRight /></i></Link>
+                                        <Link className="btn-default btn-icon m--auto" to="/about">More About Us <i className="icon"><FiArrowRight /></i></Link>
                                     </div>
                             </div>
                         </div>

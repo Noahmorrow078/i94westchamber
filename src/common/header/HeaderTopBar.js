@@ -25,7 +25,7 @@ const HeaderTopBar = () => {
                                     <li><a href="https://www.facebook.com/I94West" target="_blank"><FiFacebook /></a></li>
                                     <li><a href="https://twitter.com/I94West" target="_blank"><FiTwitter /></a></li>
                                     <li><a href="https://www.instagram.com/i94westchamber/" target="_blank"><FiInstagram /></a></li>
-                                    <li><a href="https://www.linkedin.com/company/i-94-west-chamber-of-" target="_blank"><FiLinkedin /></a></li>
+                                    <li><a href="https://www.linkedin.com/company/3839480" target="_blank"><FiLinkedin /></a></li>
                                 </ul>
                            
                         </div>

@@ -31,7 +31,7 @@ const Scholarship = () => {
                         <div class="col-md-6 col-sm-12 mb--20">
                         <h3>Eligibility</h3>
                             <p>
-                                To be eligible for a scholarship, the applicant must live in or attend school in one of the following cities: Albertville, Brooklyn Center, Brooklyn Park, Corcoran, Dayton, Hanover, Maple Grove, Osseo, Otsego, Rogers, or St. Michael.
+                                To be eligible for a scholarship, the applicant must live in or attend school in one of the following cities: Albertville, Corcoran, Dayton, Hanover, Maple Grove, Osseo, Otsego, Rogers, or St. Michael.
                                 Applicants must hold a minimum GPA of 3.0 and must provide a transcript as well as three letters of recommendation from non-family members. <br/><br/>
                                 Applicants must illustrate qualities of leadership, community service, and character.
                             </p>

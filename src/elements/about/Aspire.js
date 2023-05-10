@@ -25,10 +25,10 @@ const Aspire = () => {
                   
 
                     <p style={{color:'black',padding:'10px'}}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum em. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                    We self-publish our annual publication which includes print distribution to our membership and within our chamber communities. We also have a significant digital and social media distribution network. To advertise in our annual publication <a href="mailTo:abby@i94westchamber.com" style={{color:'var(--blue)'}}>click here</a>.
                     </p>
     
-                    <Link className="btn-default btn-icon m--auto" to="#">View Now!<i className="icon"><FiArrowRight /></i></Link>
+                    <a href="https://issuu.com/i94westchamber/docs/aspire_2023_interactive" className="btn-default btn-icon m--auto" target="_blank">View Now!<i className="icon"><FiArrowRight /></i></a>
                 
                     </div>
 

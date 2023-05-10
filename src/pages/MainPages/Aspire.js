@@ -3,12 +3,28 @@ import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 
 const Aspire = () => {
+
+    function AspireEmbed() {
+        return (
+          <div style={{ position: 'relative', paddingTop: 'max(60%,326px)', height: 0, width: '100%' }}>
+            <iframe
+              allow="clipboard-write"
+              sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms"
+              allowFullScreen={true}
+              style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: 0, right: 0, top: 0, bottom: 0 }}
+              src="https://e.issuu.com/embed.html?d=aspire_2023_interactive&u=i94westchamber"
+            />
+          </div>
+        );
+      }
+
+
     return (
         <>
             <SEO title="Aspire Guide" />
             <Layout>
                 <div className="main-content">
-                <iframe allowfullscreen="true" width="100%" height="900px" src="https://e.issuu.com/embed.html?d=aspire_interactive&amp;hideIssuuLogo=true&amp;showOtherPublicationsAsSuggestions=true&amp;u=i94westchamber"></iframe>                 
+                    <AspireEmbed/>
                 </div>
             </Layout>
         </>

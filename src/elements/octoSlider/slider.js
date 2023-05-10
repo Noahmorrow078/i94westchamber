@@ -9,16 +9,16 @@ const Slider = () => {
 const [touchEnd, setTouchEnd] = useState(0);
 
   const sections = [
-    { num: 0, title: 'GET BUSINESS SUPPORT', color: '#1668b0', text: 'The chamber is the region’s #1 business concierge, from bulk mailings to notary public. Certificate Of Origin Services'},
-    { num: 1, title: 'EXPAND YOUR NETWORK', color: '#61a9e8', text: 'It is not just who you know, its who others know. Networking is powerful. Add 470+ professionals to your network.' },
-    { num: 2, title: 'ATTEND YOUR EVENTS', color: '#1b86e3', text: 'The Chamber supports 4 monthly networking groups, host 8 annual signature events, and more! 3x the exposure for your business through the chamber.' },
-    { num: 3, title: 'EARN MORE CREDIBILITY', color: '#955c00', text: 'Raise your reputation through membership. Learn More' },
-    { num: 4, title: 'IMPROVE YOUR SKILLS', color: '#e39619',text: 'The Chamber offers education & training throughout the year and online.' },
-    { num: 5, title: 'INCREASE YOUR VISIBILITY', color: '#fdb913', text:'social media, chamber website, bigfoot, sponsorships, & Aspire Guide and more!' },
+    { num: 0, title: 'GET BUSINESS SUPPORT', color: '#1668b0', text: 'From contacts and connections within local and regional government and elected officials, the chamber is here to connect and support your business.'},
+    { num: 1, title: 'EXPAND YOUR NETWORK', color: '#61a9e8', text: 'It’s not just who you know, it’s who others know. Networking is powerful. Add hundreds of professionals to your network.' },
+    { num: 2, title: 'ATTEND MORE EVENTS!', color: '#1b86e3', text: 'The chamber hosts several monthly networking groups, as well as annual signature events, that help you network and connect your business. ' },
+    { num: 3, title: 'EARN MORE CREDIBILITY', color: '#955c00', text: 'A membership with the chamber is a “good housekeeping seal of approval” of sorts. Chamber members are trusted partners!' },
+    { num: 4, title: 'IMPROVE YOUR SKILLS', color: '#e39619',text: 'There are multiple opportunities throughout the year for education and training in a variety of business sectors.' },
+    { num: 5, title: 'INCREASE YOUR VISIBILITY', color: '#fdb913', text:'Take advantage of our social media channels, website, weekly newsletter, annual publication, events and more! ' },
     { num: 6, title: 'GAIN AN ADVOCATE', color: '#e3a410', text:'The chamber is a strong, unified voice that advocates for your business.' },
-    { num: 7, title: 'SHOP THE CHAMBER', color: '#0b3a61', text:'It pays to do business with a member & share your hot deals.' },
-    { num: 8, title: 'RECRUIT TOP TALENT', color: '#2a4963', text:'List your job openings on the chamber website to recruit your next team member.' },
-    { num: 9, title: 'MAKE MORE MONEY', color: '#1668b0', text:'Build your brand, expand your business. Referrals & recommendations pay!' },
+    { num: 7, title: 'SHOP THE CHAMBER', color: '#0b3a61', text:' List your Hot Deals on the chamber website to increase  your exposure within the community.' },
+    { num: 8, title: 'RECRUIT TOP TALENT!', color: '#2a4963', text:'List your job openings on the chamber website to recruit your next team member.' },
+    { num: 9, title: 'MAKE MORE MONEY', color: '#1668b0', text:'Participation in chamber events and referrals result in increased business.' },
   ];
 
   useEffect(() => {
@@ -64,7 +64,7 @@ return () => clearInterval(intervalId);
         <div className="container">
           <div className="slider-title">
             <h2 style={{color:'var(--orange)'}}>Chamber Benifits</h2>
-            <span style={{color:'black'}}>How Can We help your Business</span>
+            <span style={{color:'black'}}>How We Help Your Business</span>
           </div>
 
         <div className="row rn-section-gap">

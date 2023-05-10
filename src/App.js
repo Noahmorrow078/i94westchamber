@@ -12,6 +12,9 @@ import JoinNow from './pages/MainPages/JoinNow';
 import Scholarship from './pages/MainPages/Scholarship';
 import NotFound from './pages/MainPages/NotFound';
 import Aspire from './pages/MainPages/Aspire';
+import JoinCommittee from './pages/MainPages/JoinCommittee';
+
+
 
 // Pages import Here 
 import Splash from "./pages/Splash";
@@ -93,6 +96,7 @@ const App = () => {
                 <Route path={`${process.env.PUBLIC_URL + "/the-chamber"}`} exact component={JoinNow}/>
                 <Route path={`${process.env.PUBLIC_URL + "/scholarship"}`} exact component={Scholarship}/>
                 <Route path={`${process.env.PUBLIC_URL + "/aspire-guide"}`} exact component={Aspire}/>
+                <Route path={`${process.env.PUBLIC_URL + "/join-a-committee"}`} exact component={JoinCommittee}/>
 
                     
                     

@@ -7,6 +7,7 @@ const ContactOne = () => {
     return (
         <>
             <div className="row mt--40 row--15 m--auto container-xxl justify-content-center">
+            <h3>Contact Us</h3>
             <div className="col-lg-5 mt_md--30 mt_sm--30 mb--20 ">
                     <GoogleMapStyle />
                 </div>
@@ -17,7 +18,7 @@ const ContactOne = () => {
                                         <FiHeadphones />
                                     </div>
                                     <div className="inner">
-                                        <h4 className="title">Contact Phone Number</h4>
+                                        <h4 className="title">Phone</h4>
                                         <p><a href="tel:7634282921">763-428-2921</a></p>
                                     </div>
                                 </div>
@@ -28,7 +29,7 @@ const ContactOne = () => {
                                         <FiMail />
                                     </div>
                                     <div className="inner">
-                                        <h4 className="title">Our Email Address</h4>
+                                        <h4 className="title">Email</h4>
                                         <p><a href="mailto:admin@gmail.com">info@i94westchamber.org</a></p>
                                     </div>
                                 </div>

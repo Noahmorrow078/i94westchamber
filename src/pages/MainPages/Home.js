@@ -40,7 +40,7 @@ const Home = () => {
                 {/* Start Slider area  */}
                 <div className="slider-area slider-style-2 height-950 bg_image" data-black-overlay="2" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg.jpg)`}}>
                     <div className="container above-fold">
-                        <h2 class="above-fold-text">Here to Help you Succeed</h2>
+                        <h2 class="above-fold-text">We’re here to help you succeed</h2>
                         <a className="btn-default btn-icon m--auto" href="#">JOIN NOW!<i className="icon"><FiArrowRight /></i></a>
 
                     </div>

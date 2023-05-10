@@ -19,7 +19,7 @@ const Social = () => {
 
                     <div className="col-lg-6 mt_md--30 mt_sm--30 col-sm-12">
                         <div className="thumbnail">
-                            <h3>Join The Mailing List</h3>
+                            <h3>Join Our Mailing list</h3>
                             <p>
                                 SeaWire Web is a wireframe kit that has more than 15 popular categories 
                                 and more than 200 screens from each category, SeaWire Web deserves 

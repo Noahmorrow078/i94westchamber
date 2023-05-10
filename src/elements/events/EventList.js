@@ -14,7 +14,7 @@ const EventList = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('https://business.i94westchamber.org/events/UpcomingEventImages?limit=10&renderMode=json')
+    axios.get('https://business.i94westchamber.org/events/UpcomingEventImages?category=6&limit=10&daysForward=30&renderMode=json')
       .then(response => {
         const  Data  = response.data;
         console.log(response.data)
