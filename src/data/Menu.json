@@ -57,17 +57,17 @@
       {
         "label": "Directory",
         "url": "https://business.i94westchamber.org/list",
-        "target": "_blank"
+        "target": "_self"
       },
       {
         "label": "Certificates of Origin",
         "url": "https://business.i94westchamber.org/login",
-        "target": "_blank"
+        "target": "_self"
       },
       {
         "label": "Login",
         "url": "https://business.i94westchamber.org/login",
-        "target": "_blank"
+        "target": "_self"
       }
     ]
   },

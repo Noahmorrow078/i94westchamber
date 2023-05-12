@@ -188,7 +188,7 @@
 
 
 @media (max-width:768px) {
-    .header-top-bar {
-        display:none;
+    .header-top-bar .header-right {
+        display:none !important;
     }
     }
