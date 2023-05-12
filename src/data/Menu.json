@@ -1,0 +1,82 @@
+[
+   
+  {
+    "label": "Join Now",
+    "url": "https://business.i94westchamber.org/member/newmemberapp",
+    "target": "_blank",
+    "subMenu": []
+  },
+  {
+    "label": "About",
+    "url": "/about",
+    "target": "_self",
+    "subMenu": []
+  },
+  {
+    "label": "Resources",
+    "url": "#",
+    "target": "_self",
+    "subMenu": [
+      {
+        "label": "Hot Deals",
+        "url": "https://business.i94westchamber.org//hotdeals",
+        "target": "_blank"
+      },
+      {
+        "label": "Employment",
+        "url": "https://business.i94westchamber.org/jobs",
+        "target": "_blank"
+      },
+      {
+        "label": "Join A Committee",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "label": "Scholarship Program",
+        "url": "/scholarship",
+        "target": "_self"
+      },
+      {
+        "label": "Events",
+        "url": "https://business.i94westchamber.org/events/",
+        "target": "_self"
+      },
+      {
+        "label": "Aspire Guide",
+        "url": "/aspire-guide",
+        "target": "_self"
+      }
+    ]
+  },
+  {
+    "label": "Members Only",
+    "url": "#link",
+    "target": "_self",
+    "subMenu": [
+      {
+        "label": "Directory",
+        "url": "https://business.i94westchamber.org/list",
+        "target": "_blank"
+      },
+      {
+        "label": "Certificates of Origin",
+        "url": "https://business.i94westchamber.org/login",
+        "target": "_blank"
+      },
+      {
+        "label": "Login",
+        "url": "https://business.i94westchamber.org/login",
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "label": "Contact",
+    "url": "https://business.i94westchamber.org/contact/",
+    "target": "_self",
+    "subMenu": []
+  }
+
+
+]

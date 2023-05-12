@@ -56,10 +56,10 @@ const Home = () => {
                                         textAlign = "text-left"
                                         radiusRounded = ""
                                         
-                                        title = "MONTHLY GATHERINGS"
+                                        title = "Monthly Gatherings"
                                         description = ""
                                         color="dark"
-                                        className="mb--100"
+                                        
                                     />
                      
                         <EventList/>
@@ -78,9 +78,10 @@ const Home = () => {
                         <SectionTitle
                                         textAlign = "text-left"
                                         radiusRounded = ""
-                                        title = "SIGNATURE EVENTS"
+                                        title = "Signiture Events"
                                         description = ""
                                         color="dark"
+                                        
                                     />
                      
                 

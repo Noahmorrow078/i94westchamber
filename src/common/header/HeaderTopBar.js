@@ -3,6 +3,26 @@ import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiChevronRight, FiMapPi
 import { Link } from 'react-router-dom'
 
 const HeaderTopBar = () => {
+    let browser = '';
+
+    if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+        browser = 'opera';
+    } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+        browser = 'chrome';
+    } else if (navigator.userAgent.indexOf("Safari") != -1) {
+        browser = 'safari';
+    } else {
+        browser = 'chrome';
+    }
+
+    let linkHref = 'https://business.i94westchamber.org/member/newmemberapp';
+
+    if (browser === 'safari') {
+        linkHref = 'https://apps.apple.com/us/app/chambermaster/id635075410';
+    } else if (browser === 'chrome') {
+        linkHref = 'https://play.google.com/store/apps/details?id=chambermaster.droid&hl=en_US&gl=US';
+    }
+
     return (
         <div className="header-top-bar ">
             <div className="container">
@@ -11,7 +31,7 @@ const HeaderTopBar = () => {
                     </div>
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
-                            <p><a href="https://business.i94westchamber.org/member/newmemberapp">Download the app!<FiChevronRight /></a></p>
+                            <p><a href={linkHref} target="_BLANK">Download the app!<FiChevronRight /></a></p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12">

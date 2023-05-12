@@ -1,115 +1,88 @@
+
 import React from 'react';
-import {Link} from "react-router-dom";
-import CalltoActionSeven from "../../elements/calltoaction/CalltoActionSeven";
-import footerOne from "../../data/footer/footerOne.json";
-import ScrollTop from "./ScrollTop";
-import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
-
-const footerIntem =  footerOne[0];
-const footerIntemOne =  footerOne[1];
-const footerIntemTwo =  footerOne[2];
-const footerIntemThree =  footerOne[3];
-const footerIntemFour =  footerOne[4];
-const footerIntemFive =  footerOne[5];
-
-
-const indexOneLink = (footerIntemOne.quicklink);
-const indexTwoLink = (footerIntemTwo.quicklink);
-const indexThreeLink = (footerIntemThree.quicklink);
-
+import { Link } from 'react-router-dom';
+import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
+import CalltoActionSeven from '../../elements/calltoaction/CalltoActionSeven';
+import footerOne from '../../data/Menu.json';
+import ScrollTop from './ScrollTop';
+import Logo from '../../elements/logo/Logo';
 const FooterTwo = () => {
-    return (
-        <>
-            <footer className="rn-footer footer-style-default variation-two">
-                <CalltoActionSeven />
-                <div className="footer-top">
-                    <div className="container">
-                        <div className="row">
-                            {/* Start Single Widget  */}
-                            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
-                                <div className="rn-footer-widget">
-                                    <h4 className="title">{footerIntemOne.title}</h4>
-                                    <div className="inner">
-                                        <ul className="footer-link link-hover">
-                                            {indexOneLink.map((data, index) => (
-                                                <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End Single Widget  */}
+  const footerItems = footerOne.slice(0, 4);
 
-                            {/* Start Single Widget  */}
-                            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+  return (
+    <>
+      <footer className="rn-footer footer-style-default variation-two">
+        <CalltoActionSeven />
+        <div className="footer-top">
+          <div className="container">
+            <div className="row">
+            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
                                 <div className="rn-footer-widget">
-                                    <div className="widget-menu-top">
-                                        <h4 className="title">{footerIntemTwo.title}</h4>
-                                        <div className="inner">
-                                            <ul className="footer-link link-hover">
-                                                {indexThreeLink.map((data, index) => (
-                                                    <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                    <div className="logo mb--100" >
+                                        <Logo 
+                                            image={`${process.env.PUBLIC_URL}/images/logo/footer-logo.png`}
+                                            image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
+                                        />
                                     </div>
                                 </div>
                             </div>
-                            {/* End Single Widget  */}
-
-                            {/* Start Single Widget  */}
-                            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
-                                <div className="rn-footer-widget">
-                                    <h4 className="title">{footerIntemThree.title}</h4>
-                                    <div className="inner">
-                                        <ul className="footer-link link-hover">
-                                            {indexTwoLink.map((data, index) => (
-                                                <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End Single Widget  */}
-
-                            {/* Start Single Widget  */}
-                            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
-                                <div className="rn-footer-widget">
-                                    <h4 className="title">{footerIntemFour.title}</h4>
-                                    <div className="inner">
-                                        <ul className="footer-link link-hover">
-                                            {indexTwoLink.map((data, index) => (
-                                                <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End Single Widget  */}
-
-                            {/* Start Single Widget  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="rn-footer-widget">
-                                    <h4 className="title">{footerIntemFive.title}</h4>
-                                    <div className="inner">
-                                        <h6 className="subtitle">{footerIntemFive.subtitle}</h6>
-                                        <ul className="social-icon social-default justify-content-start">
-                                            <li><Link to="facebook.com"><FiFacebook /></Link></li>
-                                            <li><Link to="twitter.com"><FiTwitter /></Link></li>
-                                            <li><Link to="instagram.com"><FiInstagram /></Link></li>
-                                            <li><Link to="linkdin.com"><FiLinkedin /></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End Single Widget  */}
-                        </div>
+              {footerItems.map((item, index) => (
+                <div className="col-lg-2 col-md-6 col-sm-6 col-12" key={index}>
+                  <div className="rn-footer-widget">
+                    <h4 className="title">{item.label}</h4>
+                    <div className="inner">
+                      <ul className="footer-link link-hover">
+                        {item.subMenu.map((subItem, subIndex) => (
+                          <li key={subIndex}>
+                            <Link to={subItem.url} target={subItem.target}>
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
+                  </div>
                 </div>
-            </footer>
-            <ScrollTop />
-        </>
-    )
-}
+              ))}
+
+              <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div className="rn-footer-widget">
+                  <h4 className="title">{footerOne[4].title}</h4>
+                  <div className="inner">
+                    <h6 className="subtitle">{footerOne[4].subtitle}</h6>
+                    <ul className="social-icon social-default justify-content-start">
+                      <li>
+                        <Link to="facebook.com">
+                          <FiFacebook />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="twitter.com">
+                          <FiTwitter />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="instagram.com">
+                          <FiInstagram />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="linkdin.com">
+                          <FiLinkedin />
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <ScrollTop />
+    </>
+  );
+};
 
 export default FooterTwo;
+

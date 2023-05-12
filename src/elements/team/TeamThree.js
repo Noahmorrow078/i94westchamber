@@ -18,7 +18,7 @@ const TeamThree = ({column , teamStyle, teamData}) => {
     return (
        
         <div style={{display:'flex', gap:'20px'}}>
-          <Swiper modules={[Navigation]} navigation slidesPerView={1}  centeredSlides={true}  initialSlide={2} breakpoints={{  768: {slidesPerView: 3,}}}>
+          <Swiper modules={[Navigation]} navigation slidesPerView={1}  centeredSlides={true}  initialSlide={1} breakpoints={{  768: {slidesPerView: 3,}}}>
 
             {teamData.map((data, index) => (
                 <SwiperSlide key={`${index}_${data.name}`} >

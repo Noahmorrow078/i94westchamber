@@ -9,14 +9,14 @@ const Aspire = () => {
             <div className="container">
                 <div className="row row--30 align-items-center">
 
-                <div className="col-lg-5">
-                        <div className="thumbnail">
-                            <img className="mag magazine" src="./images/about/magazine.jpg" alt="Aspire Guide" />
-                        </div>
+                <div className="col-lg-6">
+                      
+                            <img className="mag magazine" src="./images/about/magazine.png" alt="Aspire Guide" />
+                       
                     </div>
               
 
-                    <div className="col-lg-7 mt_md--30 mt_sm--30">
+                    <div className="col-lg-6 mt_md--30 mt_sm--30">
 
                     <div className="aspire-text">
 
@@ -28,7 +28,7 @@ const Aspire = () => {
                     We self-publish our annual publication which includes print distribution to our membership and within our chamber communities. We also have a significant digital and social media distribution network. To advertise in our annual publication <a href="mailTo:abby@i94westchamber.com" style={{color:'var(--blue)'}}>click here</a>.
                     </p>
     
-                    <a href="https://issuu.com/i94westchamber/docs/aspire_2023_interactive" className="btn-default btn-icon m--auto" target="_blank">View Now!<i className="icon"><FiArrowRight /></i></a>
+                    <a href="/aspire-guide" className="btn-default btn-icon m--auto">View Now!<i className="icon"><FiArrowRight /></i></a>
                 
                     </div>
 

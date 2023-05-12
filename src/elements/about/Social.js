@@ -21,9 +21,7 @@ const Social = () => {
                         <div className="thumbnail">
                             <h3>Join Our Mailing list</h3>
                             <p>
-                                SeaWire Web is a wireframe kit that has more than 15 popular categories 
-                                and more than 200 screens from each category, SeaWire Web deserves 
-                                to be your partner in working on projects. So what are you waiting for?
+                            Subscribe to our weekly email newsletter for important updates from the chamber and business community. 
                             </p>
 
                             <Mailchimp

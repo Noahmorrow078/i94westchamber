@@ -17,78 +17,105 @@ const About = () => {
 
     const boardOfDirectors = [
         {
-        image: 'team-04',
-        name: 'Bill Carrington',
-        designation: 'Chairperson',
-        company: 'Voyageur Real Estate Group'
+          image: '#',
+          name: 'Sarah Becker',
+          designation: 'Chair',
+          company: 'Clear Simple Business'
         },
         {
-        image: 'team-05',
-        name: 'Sarah Becker',
-        designation: 'Vice Chairperson',
-        company: 'Clear Simple Business'
+          image: '#',
+          name: 'Mindy Smith',
+          designation: 'Vice Chair',
+          company: 'Guardian Angels Senior Services'
         },
         {
-        image: 'team-06',
-        name: 'Kelly Eull',
-        designation: 'Past Chairperson',
-        company: 'Henningson & Snoxell, Ltd.'
+          image: '#',
+          name: 'Bill Carrington',
+          designation: '',
+          company: 'Voyageur Real Estate Group'
         },
         {
-        image: 'team-07',
-        name: 'Steve Curtis',
-        designation: 'Secretary',
-        company: 'Express Employment Professionals'
+          image: '#',
+          name: 'Kelly Eull',
+          designation: '',
+          company: 'Henningson & Snoxell'
         },
         {
-        image: 'team-08',
-        name: 'Nick Christoff',
-        designation: '',
-        company: 'Thrivent Financial'
+          image: '#',
+          name: 'Steve Curtis',
+          designation: '',
+          company: 'Express Employment Professionals'
         },
         {
-        image: 'team-09',
-        name: 'Dave Hanson',
-        designation: '',
-        company: 'CLAM Corporation'
+          image: '#',
+          name: 'Derek Larson',
+          designation: '',
+          company: 'Edward Jones'
         },
         {
-        image: 'team-10',
-        name: 'Lynn Jurrens',
-        designation: '',
-        company: 'Jurrens & Associates'
+          image: '#',
+          name: 'Steve Schrunk',
+          designation: '',
+          company: 'Kelly\'s Diamond Realty'
         },
         {
-        image: 'team-11',
-        name: 'Derek Larson',
-        designation: '',
-        company: 'Edward Jones'
+          image: '#',
+          name: 'Lynn Jurrens',
+          designation: '',
+          company: 'Jurrens & Associates'
         },
         {
-        image: 'team-12',
-        name: 'Bill McMullen',
-        designation: '',
-        company: 'Money Mailer'
+          image: '#',
+          name: 'Vinita Steffl',
+          designation: '',
+          company: 'Acumen Business Solutions'
         },
         {
-        image: 'team-13',
-        name: 'Steve Schrunk',
-        designation: '',
-        company: 'Kelly Diamond Realty'
+          image: '#',
+          name: 'Nick Christoff',
+          designation: '',
+          company: 'Thrivent Financial'
         },
         {
-        image: 'team-14',
-        name: 'Mindy Smith',
-        designation: '',
-        company: 'Guardian Angels Senior Services'
+          image: '#',
+          name: 'Alyssa Weidendorf',
+          designation: '',
+          company: 'Falcon National Bank'
         },
         {
-        image: 'team-15',
-        name: 'Alyssa Weidendorff',
-        designation: '',
-        company: 'Falcon National Bank'
+          image: '#',
+          name: 'Bob Streitz',
+          designation: '',
+          company: 'Mortgages Unlimited'
         }
-    ];
+      ];
+
+      const advisors = [
+        {
+          image: '#',
+          name: 'David Carlson',
+          designation: '',
+          company: 'Tegrete Corporation'
+        },
+        {
+          image: '#',
+          name: 'Bob Schlichte',
+          designation: 'Professional Speaker',
+          company: ''
+        },
+        {
+          image: '#',
+          name: 'Amy Valek',
+          designation: '',
+          company: 'J&B Group'
+        },
+        {
+          image: '#',
+          name: 'Dawn Sperr',
+          designation: '',
+          company: 'Equity Source Mortgage'
+        }
+      ];
 
     return (
         <>
@@ -138,8 +165,8 @@ const About = () => {
                     <TeamThree teamStyle="team-style-default" teamData={boardOfDirectors}/>
                 </div>
                 <div className="row row--30 mt--40 mt--100 mb--100">
-                    <h2 className="title-2 center">Annual Partners</h2>
-                    <TeamThree teamStyle="team-style-default" teamData={boardOfDirectors}/>
+                    <h2 className="title-2 center">Advisors</h2>
+                    <TeamThree teamStyle="team-style-default" teamData={advisors}/>
                 </div>
 
             </div>   
