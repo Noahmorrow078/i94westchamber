@@ -68,8 +68,10 @@ const EventList = () => {
           ))}
         </Swiper>
       )}
-      <div id="mni-widgets-1674517252651"></div>
-    </>
+      <div className="read-more-btn mt--40">
+           <a className="btn-default" style={{'margin':'auto', 'display':'block','maxWidth':'240px'}} href="https://business.i94westchamber.org/events/search?q=&c=6&l=&Lookahead="><span>View All Events</span></a>
+      </div>    
+                                </>
   );
 };
 
