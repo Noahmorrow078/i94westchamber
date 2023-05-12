@@ -15,6 +15,8 @@ import AboutTwo from "../../elements/about/AboutTwo";
 import AboutThree from "../../elements/about/AboutThree";
 import Aspire from '../../elements/about/Aspire';
 import Social from '../../elements/about/Social';
+import SocialTwo from '../../elements/about/SocialTwo';
+
 import Location from '../../elements/about/Location'
 import CounterUpTwo from "../../elements/counterup/CounterUpTwo";
 
@@ -99,7 +101,7 @@ const Home = () => {
                 <Separator />
                     <Slider/>
                 <Separator />
-                    <Social/>
+                    <SocialTwo/>
                 <Separator />
                     <Aspire/>
                 <Separator />  
