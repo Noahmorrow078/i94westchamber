@@ -11,6 +11,7 @@ const Copyright = () => {
                                 {/* <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms And Condition</a></li>
                                 <li><a href="/contact">Contact Us</a></li> */}
+                                <a href="https://www.clubhausagency.com" target="_BLANK" style={{'width':'100px'}}><img style={{'maxWidth':'150px'}}  className="mb--10" src="/images/footer-logo.svg"/></a>
                             </ul>
                         </div>
                     </div>
