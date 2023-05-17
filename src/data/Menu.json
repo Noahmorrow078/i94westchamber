@@ -3,7 +3,7 @@
   {
     "label": "Join Now",
     "url": "https://business.i94westchamber.org/member/newmemberapp",
-    "target": "_blank",
+    "target": "_self",
     "subMenu": []
   },
   {
@@ -20,12 +20,12 @@
       {
         "label": "Hot Deals",
         "url": "https://business.i94westchamber.org//hotdeals",
-        "target": "_blank"
+        "target": "_self"
       },
       {
         "label": "Employment",
         "url": "https://business.i94westchamber.org/jobs",
-        "target": "_blank"
+        "target": "_self"
       },
       {
         "label": "Join A Committee",

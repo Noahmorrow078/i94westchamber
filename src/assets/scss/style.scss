@@ -101,3 +101,14 @@
 
 @import url("https://use.typekit.net/idu3mvc.css");
 
+.event-swiper.swiper-initialized {
+    padding-top:20px;
+    padding-bottom:9px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 72%, rgba(255,255,255,0) 82%, rgb(160, 165, 168) 94%);
+}
+
+@media (max-width:769px) {
+    .event-swiper.swiper-initialized {
+        background: white;
+    }
+}

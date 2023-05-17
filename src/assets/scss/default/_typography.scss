@@ -409,11 +409,12 @@ hr {
 kbd {
     background: var(--color-primary);
 }
+.orange {
+	color:var(--orange)
+}
 
-
-
-
-
-
-
-
+@media (max-width:769px) {
+	.popup-mobile-menu .mainmenu li a:hover {
+		color:var(--orange);
+	}
+}

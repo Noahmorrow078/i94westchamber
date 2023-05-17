@@ -43,6 +43,7 @@ const EventList = () => {
           slidesPerView={1}
           navigation 
           spaceBetween={20}  
+          className="event-swiper"
           breakpoints={{  
             768: {
               slidesPerView: 3.5,

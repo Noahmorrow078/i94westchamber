@@ -134,10 +134,10 @@ const About = () => {
                 <div className="row row--30 align-items-top">
 
                     <div className="col-lg-5">
-                        <h2 className="title  m-center">Our Mission:</h2>
+                        <h2 className="title  m-center orange">Our Mission:</h2>
                         <p className="mb--50">The mission of the I-94 West Chamber of Commerce is to promote partnerships between businesses, government and community, providing information and resources, with the goal of creating a positive environment for the I-94 West Chamber of Commerce communities.</p>
 
-                        <h2 className="title m-center">Our Vision:</h2>
+                        <h2 className="title m-center orange">Our Vision:</h2>
                         <p>To be a driving force in the development of commerce and to improve the quality of life in the greater I-94 West Chamber of Commerce region through education, avocation, and connection.
 
 </p>

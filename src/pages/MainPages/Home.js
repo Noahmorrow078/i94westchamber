@@ -43,7 +43,7 @@ const Home = () => {
                 <div className="slider-area slider-style-2 height-950 bg_image" data-black-overlay="2" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg.jpg)`}}>
                     <div className="container above-fold">
                         <h2 class="above-fold-text">We’re here to help you succeed</h2>
-                        <a className="btn-default btn-icon m--auto" href="#">JOIN NOW!<i className="icon"><FiArrowRight /></i></a>
+                        <a className="btn-default btn-icon m--auto"  href="https://business.i94westchamber.org/member/newmemberapp">JOIN NOW!<i className="icon"><FiArrowRight /></i></a>
 
                     </div>
                 </div>
