@@ -4,7 +4,7 @@ module.exports = {
   staticFileGlobs: [
     "build/static/css/*.css",
     "build/static/js/*.js",
-    "build/shell.html",
+    "build/200.html",
     "build/index.html"
   ],
   stripPrefix: "build",
