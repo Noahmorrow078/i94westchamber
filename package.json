@@ -38,6 +38,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.28.1",
+    "react-snap": "^1.23.0",
     "react-tabs": "^3.2.2",
     "react-typed": "^1.2.0",
     "sass": "^1.49.10",
@@ -48,7 +49,8 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts  build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -70,5 +72,11 @@
   },
   "devDependencies": {
     "fslightbox-react": "^1.6.2"
+  },
+  "reactSnap": {
+    "include" : ["/micronet-template"],
+    "inlineCss": true,
+    "removeScriptTags": true,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   }
 }
