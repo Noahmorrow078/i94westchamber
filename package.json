@@ -76,9 +76,8 @@
     "fslightbox-react": "^1.6.2"
   },
   "reactSnap": {
-    "include" : ["/","/micronet-template"],
+    "include" : ["202.html","/micronet-template"],
     "inlineCss": true,
-    "removeScriptTags": true,
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
     "publicPath": "/"
   }
