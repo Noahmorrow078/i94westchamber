@@ -51,7 +51,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postbuild": "react-snap",
-    "generate-sw": "sw-precache --root=build --config scripts/sw-precache-config.js && uglifyjs build/service-worker.js -o build/service-worker.js",
+     "generate-sw": "sw-precache --root=build --config scripts/sw-precache-config.js && uglifyjs build/service-worker.js -o build/service-worker.js",
     "build-snap": "react-scripts build && react-snap && yarn run generate-sw"
   },
   "eslintConfig": {
@@ -76,9 +76,7 @@
     "fslightbox-react": "^1.6.2"
   },
   "reactSnap": {
-    "include" : ["200.html","/micronet-template"],
-    "inlineCss": true,
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "publicPath": "/"
+    "include" : ["/","/micronet-template"],
+    "inlineCss": true
   }
 }
