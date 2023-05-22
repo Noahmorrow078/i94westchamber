@@ -2,7 +2,7 @@
    
   {
     "label": "Join Now",
-    "url": "https://business.i94westchamber.org/member/newmemberapp",
+    "url": "",
     "target": "_self",
     "subMenu": []
   },
@@ -19,12 +19,12 @@
     "subMenu": [
       {
         "label": "Hot Deals",
-        "url": "https://business.i94westchamber.org//hotdeals",
+        "url": "",
         "target": "_self"
       },
       {
         "label": "Employment",
-        "url": "https://business.i94westchamber.org/jobs",
+        "url": "",
         "target": "_self"
       },
       {
@@ -39,7 +39,7 @@
       },
       {
         "label": "Events",
-        "url": "https://business.i94westchamber.org/events/",
+        "url": "",
         "target": "_self"
       },
       {
@@ -56,7 +56,7 @@
     "subMenu": [
       {
         "label": "Directory",
-        "url": "https://business.i94westchamber.org/list",
+        "url": "",
         "target": "_self"
       },
       {
@@ -66,14 +66,14 @@
       },
       {
         "label": "Login",
-        "url": "https://business.i94westchamber.org/login",
+        "url": "",
         "target": "_self"
       }
     ]
   },
   {
     "label": "Contact",
-    "url": "https://business.i94westchamber.org/contact/",
+    "url": "",
     "target": "_self",
     "subMenu": []
   }
