@@ -77,6 +77,8 @@
   },
   "reactSnap": {
     "include" : ["/micronet-template"],
-    "inlineCss": true
+    "removeScriptTags": true,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "publicPath": "/"
   }
 }
