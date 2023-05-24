@@ -2,7 +2,7 @@
    
   {
     "label": "Join Now",
-    "url": "",
+    "url": "https://business.i94westchamber.org/member/newmemberapp",
     "target": "_self",
     "subMenu": []
   },
@@ -19,18 +19,18 @@
     "subMenu": [
       {
         "label": "Hot Deals",
-        "url": "",
+        "url": "https://business.i94westchamber.org//hotdeals",
         "target": "_self"
       },
       {
         "label": "Employment",
-        "url": "",
+        "url": "https://business.i94westchamber.org/jobs",
         "target": "_self"
       },
       {
         "label": "Join A Committee",
-        "url": "#",
-        "target": "/join-a-committee"
+        "url": "/join-a-committee",
+        "target": "_self"
       },
       {
         "label": "Scholarship Program",
@@ -39,7 +39,7 @@
       },
       {
         "label": "Events",
-        "url": "",
+        "url": "https://business.i94westchamber.org/events/",
         "target": "_self"
       },
       {
@@ -56,7 +56,7 @@
     "subMenu": [
       {
         "label": "Directory",
-        "url": "",
+        "url": "https://business.i94westchamber.org/list",
         "target": "_self"
       },
       {
@@ -66,14 +66,14 @@
       },
       {
         "label": "Login",
-        "url": "",
+        "url": "https://business.i94westchamber.org/login",
         "target": "_self"
       }
     ]
   },
   {
     "label": "Contact",
-    "url": "",
+    "url": "https://business.i94westchamber.org/contact/",
     "target": "_self",
     "subMenu": []
   }

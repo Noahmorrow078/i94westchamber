@@ -6,7 +6,7 @@ const Micronet = () => {
         <>
            
             <Layout>
-                <div className="main-content">
+                <div className="main-content micronet">
                 #micronet_content#
                 </div>
             </Layout>
