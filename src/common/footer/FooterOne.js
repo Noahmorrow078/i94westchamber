@@ -37,9 +37,9 @@ const FooterOne = () => {
                       <ul className="footer-link link-hover">
                         {item.subMenu.map((subItem, subIndex) => (
                           <li key={subIndex}>
-                            <Link to={subItem.url} target={subItem.target}>
+                            <a href={subItem.url} >
                               {subItem.label}
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>

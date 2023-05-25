@@ -1,5 +1,4 @@
 [
-   
   {
     "label": "Join Now",
     "url": "https://business.i94westchamber.org/member/newmemberapp",
@@ -19,7 +18,7 @@
     "subMenu": [
       {
         "label": "Hot Deals",
-        "url": "https://business.i94westchamber.org//hotdeals",
+        "url": "https://business.i94westchamber.org/hotdeals",
         "target": "_self"
       },
       {
@@ -39,7 +38,7 @@
       },
       {
         "label": "Events",
-        "url": "https://business.i94westchamber.org/events/",
+        "url": "https://business.i94westchamber.org/events",
         "target": "_self"
       },
       {
@@ -77,6 +76,4 @@
     "target": "_self",
     "subMenu": []
   }
-
-
 ]
