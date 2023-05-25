@@ -25,6 +25,10 @@ const Aspire = () => {
             <Layout>
                 <div className="main-content">
                     <AspireEmbed/>
+                    <div class="container pt--20">
+                    <p>We self-publish our annual publication which includes print distribution to our membership and within our chamber communities. We also have a significant digital and social media distribution network. To advertise in our annual publication <a href="mailTo:abby@i94westchamber.org" style={{'color':'lightblue'}}>click here</a>.
+        </p>
+        </div>
                 </div>
             </Layout>
         </>

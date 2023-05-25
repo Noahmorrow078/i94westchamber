@@ -15,12 +15,12 @@ const HeaderTopBar = () => {
         browser = 'chrome';
     }
 
-    let linkHref = 'https://business.i94westchamber.org/member/newmemberapp';
+    let linkHref = 'https://play.google.com/store/apps/details?id=com.micronet.android.memberplus&hl=en_US&gl=US';
 
     if (browser === 'safari') {
-        linkHref = 'https://apps.apple.com/us/app/chambermaster/id635075410';
+        linkHref = 'https://apps.apple.com/us/app/memberplus/id839204301';
     } else if (browser === 'chrome') {
-        linkHref = 'https://play.google.com/store/apps/details?id=chambermaster.droid&hl=en_US&gl=US';
+        linkHref = 'https://play.google.com/store/apps/details?id=com.micronet.android.memberplus&hl=en_US&gl=US';
     }
 
     return (
