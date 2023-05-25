@@ -80,7 +80,7 @@ const Home = () => {
                         <SectionTitle
                                         textAlign = "text-left"
                                         radiusRounded = ""
-                                        title = "Signiture Events"
+                                        title = "Signature Events"
                                         description = ""
                                         color="dark"
                                         

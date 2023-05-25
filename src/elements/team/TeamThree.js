@@ -26,11 +26,12 @@ const TeamThree = ({column , teamStyle, teamData}) => {
                         <div className={`rn-team ${teamStyle}`}>
                             <div className="inner">
                                 <figure className="thumbnail">
-                                    <img style={{borderRadius:'100%'}}src={`./images/team/team-01.jpg`} alt="Corporate React Template" />
+                                    <img style={{ borderRadius: '0%', 'position':'relative', 'top':'-40px'}} src={`./images/headshots/${data.name.replace(/\s/g, '')}.jpg`} alt="Corporate React Template" />
                                 </figure>
                                 <figcaption className="content">
                                     <h2 className="title">{data.name}</h2>
-                                    <h6 className="subtitle theme-gradient">{data.designation}</h6>
+                                    { data.designation ? <h6 className="subtitle theme-gradient" style={{'marginBottom':'0px'}}>{data.designation}</h6>: ''}
+                                     <h6 className="company">{data.company}</h6>
                                 </figcaption>
                             </div>
                         </div>

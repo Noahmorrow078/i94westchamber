@@ -11,13 +11,13 @@ const About = () => {
         {title:'Professionalism', text:'We will exhibit attributes of highly regarded professionals and offer our talent and expertise for the betterment of our community'},
         {title:'Leadership', text:'We will be true to our role as a business leader in our region and be a model to others in our community. We will properly use our influence to ensure the relevance of our organization and the continued success of our region.'},
         {title:'Engagement', text:'We will create opprotunities for cooperation and inclusion in our community. We will work towards a common vision.'},
-        {title:'Advocacy', text:'We will advocate on behald of our members for the fair and equitable enviroment that empowers business towards success.'},
+        {title:'Advocacy', text:'We will advocate on behalf of our members for the fair and equitable enviroment that empowers business towards success.'},
         {title:'Education', text:'We will offer worthwhile educational opportunities for our members and community that offer insights into personal and professional growth.'},
     ]
 
     const boardOfDirectors = [
         {
-          image: '#',
+          image: '/images/headshots/SarahBecker',
           name: 'Sarah Becker',
           designation: 'Chair',
           company: 'Clear Simple Business'
@@ -155,6 +155,7 @@ const About = () => {
                                              <li key={`${index}_${item.title}`}><span className="number">0{index + 1}</span>
                                               <h4>{item.title}</h4>
                                               <p>{item.text}</p>
+                                              
                                              </li>
                                         ))}
                                        

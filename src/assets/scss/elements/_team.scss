@@ -3,7 +3,7 @@
 -------------------------*/
 .rn-box-card,
 .team-style-default {
-    margin-top: 75px;
+    margin-top: 175px;
     margin-right:10px;
     margin-left:10px;
     .inner {
@@ -12,11 +12,11 @@
         border-radius: var(--radius-big);
 
         .thumbnail {
-            max-width: 150px;
-            max-height: 150px;
+            max-width: 200px;
+            max-height: 200px;
             border-radius: 100%;
             border: 6px solid var(--color-lessdark);
-            top: -75px;
+            top: -125px;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);

@@ -23,7 +23,7 @@ const AboutThree = () => {
                                
 
                            
-                                    <p>The I-94 west chamber of commerce is here to serve your business and help you succeed. To learn more about us click the link below.</p>
+                                    <p>The I-94 West Chamber of Commerce is here to serve your business and help you succeed. To learn more about us click the link below.</p>
 
                                     <ul className="list-numbers">
                                         {aboutItems.map((item, index) => (
