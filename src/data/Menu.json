@@ -1,7 +1,7 @@
 [
   {
     "label": "Join Now",
-    "url": "https://business.i94westchamber.org/member/newmemberapp",
+    "url": "https://business.i94westchamber.org/member/newmemberapp?template=https://clubhausagency.com/micronet-template/index.html",
     "target": "_self",
     "subMenu": []
   },
@@ -18,12 +18,12 @@
     "subMenu": [
       {
         "label": "Hot Deals",
-        "url": "https://business.i94westchamber.org/hotdeals",
+        "url": "https://business.i94westchamber.org/hotdeals?template=https://clubhausagency.com/micronet-template/index.html",
         "target": "_self"
       },
       {
         "label": "Employment",
-        "url": "https://business.i94westchamber.org/jobs",
+        "url": "https://business.i94westchamber.org/jobs?template=https://clubhausagency.com/micronet-template/index.html",
         "target": "_self"
       },
       {
@@ -38,7 +38,7 @@
       },
       {
         "label": "Events",
-        "url": "https://business.i94westchamber.org/events",
+        "url": "https://business.i94westchamber.org/events?template=https://clubhausagency.com/micronet-template/index.html",
         "target": "_self"
       },
       {
@@ -55,7 +55,7 @@
     "subMenu": [
       {
         "label": "Directory",
-        "url": "https://business.i94westchamber.org/list",
+        "url": "https://business.i94westchamber.org/list?template=https://clubhausagency.com/micronet-template/index.html",
         "target": "_self"
       },
       {
@@ -65,14 +65,14 @@
       },
       {
         "label": "Login",
-        "url": "https://business.i94westchamber.org/login",
+        "url": "https://business.i94westchamber.org/login?template=https://clubhausagency.com/micronet-template/index.html",
         "target": "_self"
       }
     ]
   },
   {
     "label": "Contact",
-    "url": "https://business.i94westchamber.org/contact/",
+    "url": "https://business.i94westchamber.org/contact/?template=https://clubhausagency.com/micronet-template/index.html",
     "target": "_self",
     "subMenu": []
   }
