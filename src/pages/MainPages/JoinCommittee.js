@@ -15,7 +15,7 @@ const JoinCommittee = () => {
                 <div class="container mt--30">
                 <div class="row row--30 align-items-top mb--100 mt--50">
                     <div class="col-lg-5">
-                        <img class="mag" src="./images/about/social1.png" alt=" "/>
+                        <img class="mag" src="./images/about/about-1.png" alt=" "/>
                     </div>
                         
                     <div class="col-lg-7 mt_md--30 mt_sm--30">
@@ -30,7 +30,7 @@ const JoinCommittee = () => {
 
                             <li>
                                 <h4>Event Committees</h4>
-                                <p>help plan and execute our annual signature events including State of the Cities, First Responders, Circle of Excellence, Golf, and Annual Celebration.</p>
+                                <p>helps plan and execute our annual signature events including State of the Cities, First Responders, Circle of Excellence, Golf, and Annual Celebration.</p>
                             </li>
 
                             <li>
