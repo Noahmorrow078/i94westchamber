@@ -26,7 +26,7 @@ const TeamThree = ({column , teamStyle, teamData}) => {
                         <div className={`rn-team ${teamStyle}`}>
                             <div className="inner">
                                 <figure className="thumbnail">
-                                    <img style={{ borderRadius: '0%', 'position':'relative', 'top':'-40px'}} src={`./images/headshots/${data.name.replace(/\s/g, '')}.jpg`} alt="Corporate React Template" />
+                                    <img style={{ borderRadius: '0%', 'position':'relative', 'top':'-40px'}} src={`./images/headshots/${data.name.replace(/\s/g, '')}.JPG`} alt="Corporate React Template" />
                                 </figure>
                                 <figcaption className="content">
                                     <h2 className="title">{data.name}</h2>
