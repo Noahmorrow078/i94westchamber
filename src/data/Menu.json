@@ -45,6 +45,11 @@
         "label": "Aspire Guide",
         "url": "/aspire-guide",
         "target": "_self"
+      },
+      {
+        "label": "Directory",
+        "url": "https://business.i94westchamber.org/list?template=https://clubhausagency.com/micronet-template/index.html",
+        "target": "_self"
       }
     ]
   },
@@ -53,11 +58,6 @@
     "url": "#link",
     "target": "_self",
     "subMenu": [
-      {
-        "label": "Directory",
-        "url": "https://business.i94westchamber.org/list?template=https://clubhausagency.com/micronet-template/index.html",
-        "target": "_self"
-      },
       {
         "label": "Certificates of Origin",
         "url": "/ess-membership",
