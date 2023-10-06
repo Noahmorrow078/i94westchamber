@@ -63,7 +63,7 @@ return () => clearInterval(intervalId);
     <div className="slider-wrapper" style={{backgroundImage:'url(./images/slider-bg.jpg)', backgroundSize:'cover'}}>
         <div className="container">
           <div className="slider-title">
-            <h2 style={{color:'var(--orange)'}}>Chamber Benifits</h2>
+            <h2 style={{color:'var(--orange)'}}>Chamber Benefits</h2>
             <span style={{color:'black'}}>How We Help Your Business</span>
           </div>
 

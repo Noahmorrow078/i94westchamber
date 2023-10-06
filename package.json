@@ -28,6 +28,7 @@
     "react-circular-progressbar": "^2.0.4",
     "react-countup": "^4.3.3",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-lottie": "^1.2.3",
@@ -49,7 +50,8 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts  build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -73,6 +75,10 @@
     "fslightbox-react": "^1.6.2"
   },
   "reactSnap": {
-    "include" : ["/","/micronet-template"]
+    "include": [
+      "/",
+      "/micronet-template"
+    ],
+    "inlineCss": false
   }
 }

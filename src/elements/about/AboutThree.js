@@ -44,7 +44,7 @@ const AboutThree = () => {
 
                     <div className="col-lg-5 d-none d-md-block">
                         <div className="thumbnail">
-                            <img className="w-100" src="./images/about/about-1.png" alt="About Images" />
+                            <img className="w-100" src="/images/about/about-1.png" alt="About Images" />
                         </div>
                     </div>
 

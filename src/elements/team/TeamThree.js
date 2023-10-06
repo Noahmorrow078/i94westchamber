@@ -38,7 +38,7 @@ const TeamThree = ({ column, teamStyle, teamData }) => {
                 <figure className="thumbnail">
                 <img
                     style={{ borderRadius: '0%', position: 'relative', top: '-40px' }}
-                    src={hasImageError(index) ? getPlaceholderImage() : `./images/headshots/${data.name.replace(/\s/g, '')}.JPG`}
+                    src={hasImageError(index) ? getPlaceholderImage() : `/images/headshots/${data.name.replace(/\s/g, '')}.JPG`}
                     alt="Corporate React Template"
                     onError={() => handleImageLoad(index)}
                     />
@@ -52,7 +52,15 @@ const TeamThree = ({ column, teamStyle, teamData }) => {
                   ) : (
                     ''
                   )}
-                  <h6 className="company">{data.company}</h6>
+                  
+                  <h6 className="company" style={{ marginBottom: '0px' }}>{data.company}</h6>
+                  {data.email ? (
+                    <a href={'mailTo:'+data.email} className="email theme-gradient" style={{ marginBottom: '0px' }}>
+                      {data.email}
+                    </a>
+                  ) : (
+                    ''
+                  )}
                 </figcaption>
               </div>
             </div>

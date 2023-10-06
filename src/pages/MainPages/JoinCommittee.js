@@ -15,7 +15,7 @@ const JoinCommittee = () => {
                 <div class="container mt--30">
                 <div class="row row--30 align-items-top mb--100 mt--50">
                     <div class="col-lg-5">
-                        <img class="mag" src="./images/about/about-1.png" alt=" "/>
+                        <img class="mag" src="/images/about/about-1.png" alt=" "/>
                     </div>
                         
                     <div class="col-lg-7 mt_md--30 mt_sm--30">

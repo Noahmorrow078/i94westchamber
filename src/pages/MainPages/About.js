@@ -2,9 +2,11 @@ import React from 'react';
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import BreadcrumbOne from "../../elements/breadcrumb/BreadcrumbOne";
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight, FiMapPin } from 'react-icons/fi';
 import TestimonialMain from '../../elements/testimonial/TestimonialMain';
 import TeamThree from '../../elements/team/TeamThree';
+import { FiMail} from "react-icons/fi";
+
 const About = () => {
 
     const aboutItems = [
@@ -20,13 +22,25 @@ const About = () => {
           image: '/images/headshots/SarahBecker',
           name: 'Sarah Becker',
           designation: 'Chair',
-          company: 'Clear Simple Business'
+          company: 'Clear Simple Business',
         },
         {
           image: '#',
-          name: 'Mindy Smith',
-          designation: 'Vice Chair',
-          company: 'Guardian Angels Senior Services'
+          name: 'Steve Schrunk',
+          designation: 'Vice President',
+          company: 'Kelly\'s Diamond Realty'
+        },
+        {
+          image: '#',
+          name: 'Lynn Jurrens',
+          designation: 'Treasurer',
+          company: 'Jurrens & Associates'
+        },
+        {
+          image: '#',
+          name: 'Brett Angell',
+          designation: '',
+          company: 'City of Rogers'
         },
         {
           image: '#',
@@ -54,18 +68,6 @@ const About = () => {
         },
         {
           image: '#',
-          name: 'Steve Schrunk',
-          designation: '',
-          company: 'Kelly\'s Diamond Realty'
-        },
-        {
-          image: '#',
-          name: 'Lynn Jurrens',
-          designation: '',
-          company: 'Jurrens & Associates'
-        },
-        {
-          image: '#',
           name: 'Vinita Steffl',
           designation: '',
           company: 'Acumen Business Solutions'
@@ -86,7 +88,7 @@ const About = () => {
           image: '#',
           name: 'Bob Streitz',
           designation: '',
-          company: 'Mortgages Unlimited'
+          company: 'SWBC Mortgage'
         }
       ];
 
@@ -114,6 +116,12 @@ const About = () => {
           name: 'Dawn Sperr',
           designation: '',
           company: 'Equity Source Mortgage'
+        },
+        {
+          image: '#',
+          name: 'Greg Anzelc',
+          designation: '',
+          company: 'Experience Maple Grove'
         }
       ];
 
@@ -141,6 +149,21 @@ const About = () => {
                         <p>To be a driving force in the development of commerce and to improve the quality of life in the greater I-94 West Chamber of Commerce region through education, avocation, and connection.
 
 </p>
+
+                    <div className="mini-contact">
+                      <img src={`${process.env.PUBLIC_URL}/images/president.jpg`}/>
+
+                      <div style={{'listStyleType':'none', 'color':'black'}}>
+                        <h2 className="title  m-center orange">Get In Contact</h2>
+                        <li><a href="mailTo:mindy@i94westchamber.org"><FiMail/> mindy@i94westchamber.org</a></li>
+                        <br/>
+                        <li><a href="https://goo.gl/maps/CW3dWamDwmGosK9U9" target="_BLANK"><FiMapPin/> 21310 John Milless Drive, Suite C, Rogers, MN 55374
+
+</a></li>
+                      </div>
+
+                    </div>
+
                     </div>
 
 
@@ -164,6 +187,8 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+
+                    
 
                 </div>
 

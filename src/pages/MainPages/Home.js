@@ -58,7 +58,7 @@ const Home = () => {
                                         textAlign = "text-left"
                                         radiusRounded = ""
                                         
-                                        title = "Monthly Gatherings"
+                                        title = "Chamber Gatherings"
                                         description = ""
                                         color="dark"
                                         

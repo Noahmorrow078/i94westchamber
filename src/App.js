@@ -79,15 +79,22 @@ import BlogGridSidebar from "./components/blog/BlogGridSidebar";
 import BlogListSidebar from "./components/blog/BlogListSidebar";
 import BlogDetails from "./pages/BlogDetails";
 import Error from "./pages/Error";
-
-
+import ReactGA from 'react-ga';
+import RouteTracker from './RouteTracker';
 // Import Css Here 
 import './assets/scss/style.scss';
+
+
+const TRACKING_ID = "UA-68038837-1"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
+
 
 
 const App = () => {
     return (
         <Router>
+            <RouteTracker />
             <PageScrollTop>
                 <Switch>
                 <Route path={`${process.env.PUBLIC_URL + "/"}`} exact component={Home}/>
