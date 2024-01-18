@@ -142,3 +142,49 @@
 .mini-contact a:hover {
     color:var(--blue)
 }
+
+
+
+
+ 
+.members {
+    padding: 10px;
+    background: var(--color-secondary);
+    border-radius: 20px;
+}
+
+.members-wrapper {
+    background:var(--color-lightest);
+    min-height:700px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.member-text {
+    color: var(--color-primary);
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+  .members h2 {
+    text-align:center;
+    color:var(--color-primary);
+    margin-bottom:0px;
+  }
+
+  .ad-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .swiper-ad-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

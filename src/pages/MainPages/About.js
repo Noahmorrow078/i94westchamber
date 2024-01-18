@@ -21,14 +21,20 @@ const About = () => {
         {
           image: '/images/headshots/SarahBecker',
           name: 'Sarah Becker',
-          designation: 'Chair',
+          designation: 'Past Chair',
           company: 'Clear Simple Business',
         },
         {
           image: '#',
           name: 'Steve Schrunk',
-          designation: 'Vice President',
+          designation: 'Chair of Board',
           company: 'Kelly\'s Diamond Realty'
+        },
+        {
+          image: '#',
+          name: 'Nick Christoff',
+          designation: 'Vice Chair',
+          company: 'Thrivent Financial'
         },
         {
           image: '#',
@@ -44,21 +50,21 @@ const About = () => {
         },
         {
           image: '#',
-          name: 'Bill Carrington',
+          name: 'Craig Dokken',
           designation: '',
-          company: 'Voyageur Real Estate Group'
+          company: 'Henningson & Snoxell Law Firm'
         },
         {
           image: '#',
-          name: 'Kelly Eull',
+          name: 'Sheila Zachman',
           designation: '',
-          company: 'Henningson & Snoxell'
+          company: 'Commercial Realty Solutions'
         },
         {
           image: '#',
-          name: 'Steve Curtis',
+          name: 'Amy Valek',
           designation: '',
-          company: 'Express Employment Professionals'
+          company: 'J&B Group'
         },
         {
           image: '#',
@@ -72,12 +78,7 @@ const About = () => {
           designation: '',
           company: 'Acumen Business Solutions'
         },
-        {
-          image: '#',
-          name: 'Nick Christoff',
-          designation: '',
-          company: 'Thrivent Financial'
-        },
+      
         {
           image: '#',
           name: 'Alyssa Weidendorf',
@@ -104,12 +105,6 @@ const About = () => {
           name: 'Bob Schlichte',
           designation: 'Professional Speaker',
           company: ''
-        },
-        {
-          image: '#',
-          name: 'Amy Valek',
-          designation: '',
-          company: 'J&B Group'
         },
         {
           image: '#',

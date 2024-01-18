@@ -38,7 +38,7 @@ const JoinCommittee = () => {
                                 <p>plans and executes events for the chamber young professionals. </p>
                             </li>
 
-                            <Link className="btn-default btn-large" to="#">Request to Join</Link>
+                            <a href="https://business.i94westchamber.org/contact" className="btn-default btn-large">Request to Join</a>
 
                         </ul>
                      

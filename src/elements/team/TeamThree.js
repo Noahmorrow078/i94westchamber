@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { Navigation } from 'swiper';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef, useEffect } from 'react';
 
@@ -37,7 +37,7 @@ const TeamThree = ({ column, teamStyle, teamData }) => {
               <div className="inner">
                 <figure className="thumbnail">
                 <img
-                    style={{ borderRadius: '0%', position: 'relative', top: '-40px' }}
+                    style={{ borderRadius: '0%', position: 'relative', top: hasImageError(index) ? '-40px' :'-20px' }}
                     src={hasImageError(index) ? getPlaceholderImage() : `/images/headshots/${data.name.replace(/\s/g, '')}.JPG`}
                     alt="Corporate React Template"
                     onError={() => handleImageLoad(index)}

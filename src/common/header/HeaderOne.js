@@ -45,11 +45,7 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
                     <div className="row align-items-center row--0">
                         <div className="col-lg-3 col-md-6 col-4">
                             <a href="/" className="Logo">
-                            <Lottie 
-                                options={defaultOptions}
-                                height={'auto'}
-                                width={'100%'}
-                            />
+                           <img class="logo-light" src="/images/logo/SVG/logo.svg" alt="Corporate Logo" />
 
                             </a>
                         </div>
