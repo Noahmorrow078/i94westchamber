@@ -1,75 +1,80 @@
-
-
-
-
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
 
+const AdSlider = ({ context = 299, max = 5, secure = true }) => {
+    const [ads, setAds] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-const AdSlider = ({ column, teamStyle, teamData }) => {
+    useEffect(() => {
+        const callbackName = `MNI_Ads_jpc${new Date().getTime()}`; // Unique callback name
+        const protocol = secure ? 'https' : 'http';
+        const domain = 'business.i94westchamber.org';
+        const scriptUrl = `${protocol}://${domain}/sponsors/ads?context=${context}&max=${max}&secure=${secure}&jsonpcallback=${callbackName}`;
+        
+        // Define the callback function globally
+        window[callbackName] = function(data) {
+            setAds(data);
+            setLoading(false);
+        };
 
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [currentSlide, setCurrentSlide] = useState(0);
+        // Create a script element to load the JSONP script
+        const script = document.createElement('script');
+        script.src = scriptUrl;
+        document.body.appendChild(script);
 
-  useEffect(() => {
-    setLoading(true);
-    axios.get('https://business.i94westchamber.org/sponsors/ads?context=299')
-      .then(response => {
-        const  Data  = response.data;
-        console.log(response.data)
-        if(Data) {
-          setData(Data);
-          setLoading(false);
-        }
-      })
-      .catch(error => {
-        console.log(error);
-        setLoading(false);
-      });
-  }, []);
+        // Clean up
+        return () => {
+            document.body.removeChild(script); // Remove the script element
+            window[callbackName] = undefined; // Cleanup global function
+        };
+    }, [context, max, secure]);
 
-  return (
-  <>
-    {loading ? (
-      <div>Loading...</div>
-    ) : (
-      <div style={{ display: 'flex', gap: '20px' }}>
-        <Swiper
-        style={{'width':'100%'}}
-          modules={[Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 0,
-            stopOnLastSlide: false,
-          }}
-          speed={4000}
-          slidesPerView={1}
-          initialSlide={0}
-          breakpoints={{ 768: { slidesPerView: 3 } }}
-        >
-          {data.filter(data => data.Type === 'image').map((data, index) => (
-            <SwiperSlide key={`${index}_${data.name}`} className="swiper-ad-item">
-              <div className="ad-item">
-                <figure className="ad-image">
-                  <a href={data.url} target='_blank'>
-                    <img
-                      style={{ borderRadius: '0%', position: 'relative'}}
-                      src={data.Source}
-                      alt="Corporate React Template"
-                    />
-                  </a>
-                </figure>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    )}
-  </>
-);
+    return (
+        <>
+            {loading ? (
+                <div>Loading...</div>
+            ) : (
+                <div style={{ display: 'flex', width: '100%' }} class="ad-slider">
+                    <Swiper
+                        modules={[Autoplay]}
+                        loop={true}
+                        autoplay={{
+                            delay: 0,
+                            disableOnInteraction: false
+                        }}
+                        speed={4000}
+                        slidesPerView={1}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            }
+                        }}
+                    >
+                        {ads.filter(ad => ad.Type === 'image').map((ad, index) => (
+                            <SwiperSlide key={`${index}_${ad.Name}`}>
+                                <div className="ad-item">
+                                    <figure className="ad-image">
+                                        <a href={ad.URL} target="_blank" rel="noopener noreferrer">
+                                            <img
+                                                src={ad.Source}
+                                                alt={ad.Alternate}
+                                                style={{ width: '100%', height: 'auto' }}
+                                            />
+                                        </a>
+                                    </figure>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            )}
+        </>
+    );
 };
 
 export default AdSlider;

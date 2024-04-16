@@ -27,30 +27,6 @@ import AdSlider from '../../elements/ads/AdSlider';
 
 const Home = () => {
 
-    const ads = [
-        {
-            name: 'Falcon National Bank',
-            image: '../../images/ad/FalconNationalBank.png',
-            url: 'https://www.falconnational.com/'
-        },
-        {
-            name: 'J&B Group ',
-            image: '/images/ad/JBGroup.jpg',
-            url: 'https://www.jbgroup.com/'
-        },
-        {
-            name: 'Rogers Printing',
-            image: '/images/ad/RogersPrinting.png',
-            url: 'https://rogersprintingmn.com/'
-        },
-        {
-            name: 'Franklin Outdoor Advertising',
-            image: '/images/ad/FranklinOutdoor.jpg',
-            url: 'https://www.franklinoutdoor.com/'
-        }
-
-       
-      ];
 
 
     return (
@@ -74,8 +50,8 @@ const Home = () => {
                 {/* End Slider area  */}
 
                 <div className="row row--30 bg-white">
-                    <div className="container bg-white pt--20">
-                        <AdSlider teamStyle="team-style-default" teamData={ads}/>
+                    <div className="container bg-white pt--20 pb--20">
+                        <AdSlider teamStyle="team-style-default" max={100} />
                     </div>
                 </div>
 
