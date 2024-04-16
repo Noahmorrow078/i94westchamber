@@ -31,22 +31,22 @@ const Home = () => {
         {
             name: 'Falcon National Bank',
             image: '../../images/ad/FalconNationalBank.png',
-            url: '#'
+            url: 'https://www.falconnational.com/'
         },
         {
             name: 'J&B Group ',
             image: '/images/ad/JBGroup.jpg',
-            url: '#'
+            url: 'https://www.jbgroup.com/'
         },
         {
             name: 'Rogers Printing',
             image: '/images/ad/RogersPrinting.png',
-            url: '#'
+            url: 'https://rogersprintingmn.com/'
         },
         {
             name: 'Franklin Outdoor Advertising',
             image: '/images/ad/FranklinOutdoor.jpg',
-            url: '#'
+            url: 'https://www.franklinoutdoor.com/'
         }
 
        

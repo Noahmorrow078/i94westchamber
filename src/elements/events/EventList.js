@@ -17,7 +17,7 @@ const EventList = () => {
     axios.get('https://business.i94westchamber.org/events/UpcomingEventImages?category=6&limit=10&daysForward=30&renderMode=json')
       .then(response => {
         const  Data  = response.data;
-        console.log(response.data)
+        // console.log(response.data)
         if(Data) {
           setData(Data);
           setLoading(false);

@@ -182,6 +182,10 @@
     align-items: center;
     padding: 20px;
   }
+  .ad-image img {
+    max-height:200px;
+    width:auto;
+  }
 
   .swiper-ad-item {
     display: flex;
