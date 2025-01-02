@@ -25,6 +25,7 @@ const Scholarship = () => {
                             <p>The I-94 West Chamber of Commerce is proud to once again offer a limited number of scholarships to graduating seniors in our chamber communities..</p>
                             <br/>
                             <img className="w-100" src="../images/i94-scholarship-program.jpg" alt="About Images" />
+                            <p style={{"marginTop":"20px"}}><i>Special thanks to our generous business scholarship supporters! Thank you to Henningson & Snoxxell LTD., Jurrens Associates, and Thrivent - Nick Christoff, JB Group and many more for supporting local youth secondary education!</i></p>
 
                            
                        </div>
