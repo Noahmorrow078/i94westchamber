@@ -24,7 +24,7 @@ const Scholarship = () => {
                             <h2 className="title">Putting Education First</h2>
                             <p>The I-94 West Chamber of Commerce is proud to once again offer a limited number of scholarships to graduating seniors in our chamber communities..</p>
                             <br/>
-                            <img className="w-100" src="./images/i94-scholarship-program.jpg" alt="About Images" />
+                            <img className="w-100" src="../images/i94-scholarship-program.jpg" alt="About Images" />
 
                            
                        </div>
