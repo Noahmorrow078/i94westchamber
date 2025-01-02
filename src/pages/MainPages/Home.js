@@ -24,6 +24,7 @@ import ThirdPartyWidget from '../../elements/members/ThirdPartyWidget';
 
 import AdSlider from '../../elements/ads/AdSlider';
 
+import Popup from '../../elements/popup/Popup';
 
 const Home = () => {
 
@@ -115,6 +116,9 @@ const Home = () => {
                     <ContactOne/>
                 <Separator />  
                
+
+                <Popup />
+
                    
                 <FooterOne />
                 <Copyright />

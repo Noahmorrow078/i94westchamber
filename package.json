@@ -9,6 +9,7 @@
   "homepage": "https://i94westchamber.org",
   "proxy": "https://business.i94westchamber.org",
   "dependencies": {
+    "@sparticuz/chromium": "^119.0.2",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -22,11 +23,13 @@
     "jsonp": "^0.2.1",
     "moment": "^2.29.4",
     "prop-types": "^15.8.1",
+    "puppeteer-core": "^21.5.1",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-axios": "^2.0.6",
     "react-bootstrap": "^1.6.4",
     "react-circular-progressbar": "^2.0.4",
+    "react-cookie": "^7.2.2",
     "react-countup": "^4.3.3",
     "react-dom": "^17.0.2",
     "react-ga": "^3.3.1",
@@ -45,9 +48,7 @@
     "react-typed": "^1.2.0",
     "sass": "^1.49.10",
     "swiper": "^11.0.5",
-    "web-vitals": "^1.1.2",
-    "@sparticuz/chromium": "^119.0.2",
-    "puppeteer-core": "^21.5.1"
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",

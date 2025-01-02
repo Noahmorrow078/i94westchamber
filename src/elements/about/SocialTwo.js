@@ -1,25 +1,67 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom";
-import { FiArrowRight, FiCheck } from "react-icons/fi";
-import jsonp from "jsonp";
+import React, { useState } from "react";
 
 const SocialTwo = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: ""
+  });
+  const [status, setStatus] = useState({
+    message: "",
+    isError: false,
+    isSubmitting: false
+  });
 
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState(""); 
-    const [errormessage, setErrorMessage] = useState("")
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    const url =
-      "https://i94westchamber.us3.list-manage.com/subscribe/post-json?u=316c10e2bd35b1a092de997e0&amp;id=f4fb8bbfe0&amp;f_id=0052bbe3f0";
-    jsonp(`${url}&FNAME=${firstName}&LNAME=${lastName}&EMAIL=${email}`, { param: "c" }, (_, data) => {
-      const { msg, result } = data;
+    setStatus({ message: "", isError: false, isSubmitting: true });
 
-      setErrorMessage(msg);
-      console.log(firstName)
-    });
+    const urlEncodedData = new URLSearchParams({
+      FNAME: formData.firstName,
+      LNAME: formData.lastName,
+      EMAIL: formData.email,
+      u: "316c10e2bd35b1a092de997e0",
+      id: "f4fb8bbfe0",
+      f_id: "0052bbe3f0"
+    }).toString();
+
+    const submitUrl = `https://i94westchamber.us3.list-manage.com/subscribe/post?${urlEncodedData}`;
+
+    try {
+      const response = await fetch(submitUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      });
+
+      setStatus({
+        message: "Thank you for subscribing!",
+        isError: false,
+        isSubmitting: false
+      });
+      
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: ""
+      });
+    } catch (error) {
+      setStatus({
+        message: "There was an error subscribing. Please try again.",
+        isError: true,
+        isSubmitting: false
+      });
+    }
   };
 
   return (
@@ -42,70 +84,61 @@ const SocialTwo = () => {
                 from the chamber and business community.
               </p>
               <form
-                action=""
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="validate mailchimp-form"
                 onSubmit={onSubmit}
-                required
+                className="validate mailchimp-form"
               >
-                <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input
+                <div className="mc-field-group">
+                  <label htmlFor="mce-FNAME">First Name</label>
+                  <input
                     type="text"
-                    name="FNAME"
-                    class=""
+                    name="firstName"
                     id="mce-FNAME"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-
-                    />
-                    <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
-                  </div>
-                  <div class="mc-field-group">
-                    <label for="mce-LNAME">Last Name </label>
-                    <input
-                      type="text"
-                     
-                      name="LNAME"
-                      class=""
-                      id="mce-LNAME"
-                      value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    />
-                    <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
-                  </div>
-                  <div class="mc-field-group">
-                    <label for="mce-EMAIL">
-                      Email Address <span class="asterisk">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="EMAIL"
-                      class="required email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      id="mce-EMAIL"
-                      
-                    />
-                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                  </div>
-                  <div id="mce-responses" class="clear">
-                    <div
-                      class="response"
-                      id="mce-error-response"
-                    >{errormessage}</div>
-                    <div
-                      class="response"
-                      id="mce-success-response"
-                    ></div>
-                  </div>
-                  
-                  <div class="clear">
-                  <button type="submit">Subscribe!</button>
-                  </div>
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    className="form-control"
+                  />
                 </div>
+                
+                <div className="mc-field-group">
+                  <label htmlFor="mce-LNAME">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="mce-LNAME"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    className="form-control"
+                  />
+                </div>
+                
+                <div className="mc-field-group">
+                  <label htmlFor="mce-EMAIL">
+                    Email Address <span className="asterisk">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="mce-EMAIL"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="form-control"
+                    required
+                  />
+                </div>
+
+                {status.message && (
+                  <div className={`alert ${status.isError ? 'alert-danger' : 'alert-success'}`}>
+                    {status.message}
+                  </div>
+                )}
+
+                <button 
+                  type="submit" 
+                  disabled={status.isSubmitting}
+                  className="btn btn-primary mt-4"
+                >
+                  {status.isSubmitting ? 'Subscribing...' : 'Subscribe!'}
+                </button>
               </form>
             </div>
           </div>

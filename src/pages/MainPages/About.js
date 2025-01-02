@@ -89,7 +89,7 @@ const About = () => {
           image: '#',
           name: 'Bob Streitz',
           designation: '',
-          company: 'SWBC Mortgage'
+          company: 'B&C Home Loans'
         }
       ];
 
